@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { IconContext } from "react-icons";
-import * as RiIcons from "react-icons/ri";
+import * as HiIcons from "react-icons/hi";
 import * as CiIcons from "react-icons/ci";
 import * as IoIcons from "react-icons/io5";
 import * as GoIcons from "react-icons/go";
@@ -12,9 +12,10 @@ export default function Header() {
   return (
     <header className="w-full h-[80px] fixed px-[4%] ">
       <div className="flex justify-between items-center ">
-        <div>
+        <div className="flex gap-2 items-center">
+            <h5 className="text-white text-[18px]">MENU</h5>
           <IconContext.Provider value={{ size: "25px", color: "white" }}>
-            <RiIcons.RiMenu2Line className="text-[30px]" />
+            <HiIcons.HiMenuAlt4  className="text-[30px]" />
           </IconContext.Provider>
         </div>
         <IconContext.Provider value={{ size: "20px", color: "white" }}>
