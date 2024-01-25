@@ -8,7 +8,7 @@ import * as GoIcons from "react-icons/go";
 export default function Header () {
   return (
     <header className="w-full">
-      <IconContext.Provider value={{ size: "30px" }}>
+      <IconContext.Provider value={{ size: "20px" }}>
         <div className="flex justify-between items-center ">
           <div>
             <RiIcons.RiMenu2Line />
@@ -23,7 +23,7 @@ export default function Header () {
             <div className="p-1.5 border-[1px] border-black rounded-[8px]">
               <GoIcons.GoBell />
             </div>
-            <div className="w-[50px] h-[50px] py-2 bg-black rounded-[10px]">
+            <div className="w-[50px] h-[40px] py-2 bg-black rounded-[10px]">
        
             </div>
           </div>
