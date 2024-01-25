@@ -11,7 +11,7 @@ import DayTime from "./DayTime";
 import ThemeSwitch from "./ThemeSwitch";
 export default function Header() {
   return (
-    <header className="w-full h-[80px] ">
+    <header className="w-full h-[80px] px-[4%] pt-[2%]">
       <div className="flex items-center w-full justify-between ">
         <div className="flex gap-2 items-center">
           <h5 className=" text-[18px]">MENU</h5>
