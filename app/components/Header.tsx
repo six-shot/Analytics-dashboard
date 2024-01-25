@@ -5,9 +5,11 @@ import * as RiIcons from "react-icons/ri";
 import * as CiIcons from "react-icons/ci";
 import * as IoIcons from "react-icons/io5";
 import * as GoIcons from "react-icons/go";
+import Image from "next/image";
+import man from "@/public/man.jpeg"
 export default function Header() {
   return (
-    <header className="w-full ">
+    <header className="w-full h-[80px] fixed px-[4%] ">
       <div className="flex justify-between items-center ">
         <div>
           <IconContext.Provider value={{ size: "25px", color: "white" }}>
@@ -25,7 +27,13 @@ export default function Header() {
             <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-[8px]">
               <GoIcons.GoBell />
             </div>
-            <div className="w-[50px] h-[40px] py-2 bg-black rounded-[10px]"></div>
+            <div className="w-[50px] h-[40px]  bg-black rounded-[10px]">
+              <Image
+                src={man}
+                className="w-full h-full object-cover rounded-[10px]"
+                alt="man"
+              />
+            </div>
           </div>
         </IconContext.Provider>
       </div>
