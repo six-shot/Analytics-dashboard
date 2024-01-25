@@ -5,7 +5,7 @@ import * as RiIcons from "react-icons/ri";
 import * as CiIcons from "react-icons/ci";
 import * as IoIcons from "react-icons/io5";
 import * as GoIcons from "react-icons/go";
-export default function () {
+export default function Header () {
   return (
     <header className="w-full">
       <IconContext.Provider value={{ size: "30px" }}>
