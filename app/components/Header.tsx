@@ -7,6 +7,7 @@ import * as IoIcons from "react-icons/io5";
 import * as GoIcons from "react-icons/go";
 import Image from "next/image";
 import man from "@/public/man.jpeg"
+import DayTime from "./DayTime";
 export default function Header() {
   return (
     <header className="w-full h-[80px] fixed px-[4%] ">
@@ -36,6 +37,9 @@ export default function Header() {
             </div>
           </div>
         </IconContext.Provider>
+      </div>
+      <div>
+        <DayTime/>
       </div>
     </header>
   );
