@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Header from "./components/Header";
 import Container from "./components/Container";
+import ThemeSwitch from "./components/ThemeSwitch";
 
 export default function Home() {
   return (
-    <main className=" bg-[#242529] w-full h-[100vh] pt-[3%]">
+    <main>
       <Header />
-      <Container/>
+      {/* <Container/> */}
+      
+      
     </main>
   );
 }

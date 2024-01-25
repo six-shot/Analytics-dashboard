@@ -47,8 +47,8 @@ export default function DayTime() {
   return (
     <div>
       <div className="flex justify-end items-center gap-[1px] mt-2 ">
-        <h5 className='text-white text-sm'>{day}</h5>
-        <h6 className="text-[10px] text-white">{`${month} ${date} ${year}`}</h6>
+        <h5 className=' text-sm'>{day}</h5>
+        <h6 className="text-[10px] ">{`${month} ${date} ${year}`}</h6>
       </div>
     </div>
   );
