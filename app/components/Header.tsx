@@ -1,23 +1,38 @@
 "use client";
-import React from "react";
+import React,{useState} from "react";
 import { IconContext } from "react-icons";
 import * as HiIcons from "react-icons/hi";
 import * as CiIcons from "react-icons/ci";
-import * as IoIcons from "react-icons/io5";
+import * as IoIcons from "react-icons/io5"
 import * as GoIcons from "react-icons/go";
 import Image from "next/image";
 import man from "@/public/man.jpeg"
 import DayTime from "./DayTime";
 import ThemeSwitch from "./ThemeSwitch";
 export default function Header() {
+    const [navbar, setNavbar] = useState(false);
   return (
     <header className="w-full fixed top-0 bg-white h-[80px] px-[4%] pt-[2%]">
       <div className="flex items-center w-full justify-between ">
         <div className="flex gap-2 items-center">
           {/* <h5 className=" text-[18px]">MENU</h5> */}
-          <IconContext.Provider value={{ size: "25px",color:'white' }}>
+          <IconContext.Provider value={{ size: "25px", color: "white" }}>
             <div className="bg-black p-2 rounded-[8px]">
-              <HiIcons.HiMenuAlt4 />
+              <HiIcons.HiMenuAlt4 onClick={() => setNavbar(!navbar)} />
+            </div>
+            <div
+              className={`${
+                navbar ? "flex" : "hidden"
+              } w-full h-screen bg-white absolute top-0 right-0  my-2  rounded-xl sm:hidden flex sidebar z-10`}
+            >
+              <IconContext.Provider value={{ color: "black" }}>
+                <IoIcons.IoCloseOutline onClick={() => setNavbar(!navbar)} />
+              </IconContext.Provider>
+              <ul className="list-none flex flex-col ">
+                <li>yess</li>
+                <li>Home</li>
+                <li>Blog</li> <li>Contact </li>
+              </ul>
             </div>
           </IconContext.Provider>
         </div>
