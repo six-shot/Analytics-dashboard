@@ -9,7 +9,7 @@ import Image from "next/image";
 import man from "@/public/man.jpeg";
 import DayTime from "./DayTime";
 import ThemeSwitch from "./ThemeSwitch";
-import logo from "@/public/assets/logo.svg";
+import Logo from "@/public/assets/Logo.svg"
 import calendar from "@/public/assets/Calendar.svg";
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
@@ -45,7 +45,7 @@ export default function Header() {
                     </div>
                   </div>
                   <div className="flex flex-col gap-5 justify-center items-center mt-[10%]">
-                    <Image src={logo} alt="logo" />
+                    <Image src={Logo} alt="logo" />
                     <h4 className="text-[#34CAA5] text-[28px] font-semibold font-plus_jakara_sans">
                       GeePay
                     </h4>
