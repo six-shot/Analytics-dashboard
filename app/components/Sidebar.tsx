@@ -71,7 +71,7 @@ export default function Sidebar() {
         
         <ul className="flex justify-between h-full flex-col">
           {menuItems.map((cat) => (
-            <li key={cat.title}>
+            <li key={cat.title} className="flex gap-6 flex-col">
               
               {cat.list.map((item) => (
                 <MenuLink item={item} key={item.title} />

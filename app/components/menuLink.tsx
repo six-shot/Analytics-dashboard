@@ -14,7 +14,7 @@ const MenuLink: React.FC<{ item: MenuItem }> = ({ item }) => {
   return (
     <Link href={item.path} className={`w-full ${pathname === item.path ? "active" : ""}`}>
       {item.icon}
-      {/* Add {item.title} or any other properties you want to render */}
+     
     </Link>
   );
 };
