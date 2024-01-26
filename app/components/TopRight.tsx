@@ -6,7 +6,7 @@ import Up from "./up";
 
 export default function TopRight() {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-col-4">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       <div className="w-full bg-white border border-[#EDF2F7] p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">

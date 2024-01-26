@@ -105,8 +105,8 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="sm:flex hidden px-[2%]">
-        <div className="flex justify-between w-full items-center">
+      <div className="sm:flex hidden border-b border-[#E5EAEF] bg-[#FAFAFA] py-2 px-[2%]">
+        <div className="flex justify-between w-full  items-center">
           <div className="w-[35%]">
             <h4 className="font-plus_jakara_sans font-semibold text-[20px]">
               Dashboard
