@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      {/* <Container/> */}
+      <Container/>
       
       
     </main>
