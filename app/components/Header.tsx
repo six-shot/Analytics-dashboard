@@ -22,7 +22,7 @@ export default function Header() {
           </IconContext.Provider>
         </div>
         <IconContext.Provider value={{ size: "20px" }}>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2">
             <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-[8px]">
               <CiIcons.CiSearch />
             </div>
