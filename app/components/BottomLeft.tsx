@@ -2,75 +2,62 @@ import React from "react";
 
 export default function BottomLeft() {
   return (
-    <div>
-      <div className="overflow-x-scroll sm:overflow-hidden">
-        <table>
-          <thead>
-            <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Savings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style={{ borderBottom: "1px solid #3C3E4D" }}>
-              <td
-                style={{
-                  width: "33px",
-                  paddingTop: "12px",
-                  paddingBottom: "12px",
-                }}
-                className="sm:text-[12px] lg:pr-[40px] md:pl-[10px] lg:pl-[20px] lg:text-[14px] text-[10px] font-inter font-normal text-white"
-              >
-                yes
-              </td>
-              <td
-                style={{
-                  width: "287px",
-                  paddingTop: "12px",
-                  paddingBottom: "12px",
-                }}
-                className="sm:text-[12px] pr-7 md:pr-[-28px] md:pl-[27px] lg:text-[14px] lg:pr-[40px] lg:pl-[40px] text-[10px] font-inter font-normal text-[#21D4AF]"
-              >
-                yes
-              </td>
-              <td
-                style={{
-                  width: "234px",
-                  paddingTop: "12px",
-                  paddingBottom: "12px",
-                }}
-                className="sm:text-[12px] pr-7 md:pr-[-28px] lg:text-[14px] lg:pr-[40px]  lg:pl-[40px] text-[10px] font-inter font-normal text-white"
-              >
-                {" "}
-                yes
-              </td>
-              <td
-                style={{
-                  width: "125px",
-                  paddingTop: "12px",
-                  paddingBottom: "12px",
-                }}
-                className="sm:text-[12px] pr-7 md:pr-[-28px] lg:text-[14px] lg:pr-[40px] text-[10px] lg:pl-[40px] font-inter font-normal text-white"
-              >
-                {" "}
-                yessssssssssssssssssssssssssssssssssssssssssssssssssss
-              </td>
-              <td
-                style={{
-                  width: "109px",
-                  paddingTop: "12px",
-                  paddingBottom: "12px",
-                }}
-                className="sm:text-[12px] pr-7  lg:text-[14px] lg:pr-[120px] md:pl-[40px] md:pr-[60px] lg:pl-[80px] text-[10px] font-inter font-normal text-white"
-              >
-                {" "}
-                yessssssssssssssssssssssssssssssssssssssssssssssssssss
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div className="overflow-x-auto">
+      <table className="w-full min-w-[460px]">
+        <thead>
+          <tr>
+            <th className="text-[12px] uppercase tracking-wide font-medium text-gray-400  text-left">
+              Name
+            </th>
+            <th className="text-[12px] uppercase tracking-wide font-medium text-gray-400  py-2 text-left">
+              Date
+            </th>
+            <th className="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2  text-left ">
+              Amount
+            </th>
+            <th className="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2  text-left ">
+              Status
+            </th>
+            <th className="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2  text-left ">
+              Invoice
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="py-2  border-b border-b-gray-50">
+              <div className="flex items-center">
+                <a
+                  href="#"
+                  className="text-gray-600 text-sm font-medium hover:text-blue-500  truncate"
+                >
+                  Marcus Bergson
+                </a>
+              </div>
+            </td>
+            <td className="py-2  ">
+              <span className="text-[13px] font-medium text-emerald-500">
+                Nov 15, 2023
+              </span>
+            </td>
+            <td className="py-2  ">
+              <span className="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">
+                $80,000
+              </span>
+            </td>
+            <td className="py-2  ">
+              <span className="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">
+                Paid
+              </span>
+            </td>
+            <td className="py-2  ">
+              <span className="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">
+                View
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
