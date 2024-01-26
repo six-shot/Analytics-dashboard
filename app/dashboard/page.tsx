@@ -11,7 +11,7 @@ export default function page() {
             <Sidebar />
           </div>
         </div>
-        <div className="w-full pl-[80px]">
+        <div className="w-full sm:pl-[80px]">
           <Container />
         </div>
       </div>
