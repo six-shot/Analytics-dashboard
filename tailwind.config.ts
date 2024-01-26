@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        plus_jakara_sans: ["var(--font-plusjakarasans)"],
+        plus_jakara_sans: ["var(--font-plus_jakara_sans)"],
         inter:["var(--font-inter)"]
       },
     },

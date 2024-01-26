@@ -17,11 +17,19 @@ export default function BottomRight() {
           <div className="skill-bar ">
             <span className="skill-per html bg-[#6160DC]"></span>
           </div>
+          <div className="font-plus_jakara_sans text-sm flex justify-between items-center">
+            <h5> $2,500,000</h5>
+            <h5> +15%</h5>
+          </div>
         </div>
         <div className="skill-box">
           <h5 className="mb-1 font-plus_jakara_sans text-sm">Artisan Aisle</h5>
           <div className="skill-bar ">
             <span className="skill-per css bg-[#54C5EB]"></span>
+          </div>
+          <div className="font-plus_jakara_sans text-sm flex justify-between items-center">
+            <h5> $2,500,000</h5>
+            <h5> +15%</h5>
           </div>
         </div>
         <div className="skill-box">
@@ -29,11 +37,19 @@ export default function BottomRight() {
           <div className="skill-bar">
             <span className="skill-per javascript bg-[#FFB74A]"></span>
           </div>
+          <div className="font-plus_jakara_sans text-sm flex justify-between items-center">
+            <h5> $2,500,000</h5>
+            <h5> +15%</h5>
+          </div>
         </div>
         <div className="skill-box">
           <h5 className="mb-1 font-plus_jakara_sans text-sm">XStore</h5>
           <div className="skill-bar">
             <span className="skill-per nodejs bg-[#FF4A55]"></span>
+          </div>
+          <div className="font-plus_jakara_sans text-sm flex justify-between items-center">
+            <h5> $2,500,000</h5>
+            <h5> +15%</h5>
           </div>
         </div>
       </div>

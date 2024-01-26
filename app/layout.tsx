@@ -10,10 +10,10 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const plusjakarasans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["200","300","400", "500", "600", "700", ],
-  variable: "--font-plusjakarasans",
+const plus_jakara_sans = Plus_Jakarta_Sans({
+  subsets: ["cyrillic-ext"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+  variable: "--font-plus_jakara_sans",
 });
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +29,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${plusjakarasans.variable}${inter.variable}`}
+      className={`${plus_jakara_sans.variable}${inter.variable}`}
     >
       <body>
         <Providers>{children}</Providers>
