@@ -76,7 +76,7 @@ const data = [
 
 export default function Chart() {
   return (
-    <div className="h-[22rem] bg-white p-4 rounded-xl border border-gray-200 flex flex-col flex-1">
+    <div className="h-[22rem] bg-white py-4 font-plus_jakara_sans rounded-xl border border-gray-200 flex flex-col flex-1">
      
       <div className="mt-3 w-full flex-1 text-xs">
         <ResponsiveContainer width="100%" height="100%">
@@ -85,12 +85,12 @@ export default function Chart() {
             height={300}
             data={data}
             margin={{
-              top: 20,
-              right: 10,
+              top: 0,
+              right: 0,
               left: -10,
               bottom: 0,
             }}
-            barSize={20}
+            barSize={30}
           >
             <CartesianGrid strokeDasharray="3 3 0 0" vertical={false} />
             <XAxis dataKey="name" />

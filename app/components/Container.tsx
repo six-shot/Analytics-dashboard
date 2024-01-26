@@ -10,7 +10,7 @@ export default function Container() {
     <section>
       <Header/>
       <div className=" sm:px-[2%] px-[4%] sm:mt-0 pt-4 bg-[#FAFAFA] mt-[25%]">
-      <div className="grid sm:grid-cols-8 grid-cols-1 gap-4">
+      <div className="grid sm:grid-cols-8 grid-cols-1 gap-4 items-center">
         <div className="sm:col-span-5">
           <TopLeft />
         </div>
