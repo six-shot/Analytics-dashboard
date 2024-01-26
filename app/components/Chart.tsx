@@ -10,6 +10,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { CustomTooltip } from "./CustomTooltip";
 
 const data = [
   {
@@ -97,7 +98,7 @@ export default function Chart() {
             <CartesianGrid strokeDasharray="3 3 0 0" vertical={false} />
             <XAxis dataKey="name" />
             <YAxis />
-          <Tooltip  cursor={{ fill: "transparent" }} />
+          <Tooltip content={<CustomTooltip />}  cursor={{ fill: "transparent" }} />
 
             <Bar
               dataKey="Expense"
