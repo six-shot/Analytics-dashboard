@@ -5,11 +5,12 @@ import * as HiIcons from "react-icons/hi";
 import * as CiIcons from "react-icons/ci";
 import * as IoIcons from "react-icons/io5";
 import * as GoIcons from "react-icons/go";
+import * as RxIcons from "react-icons/rx";
 import Image from "next/image";
 import man from "@/public/man.jpeg";
 import DayTime from "./DayTime";
 import ThemeSwitch from "./ThemeSwitch";
-import Logo from "@/public/assets/Logo.svg"
+import Logo from "@/public/assets/Logo.svg";
 import calendar from "@/public/assets/Calendar.svg";
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
@@ -104,27 +105,53 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="sm:flex hidden">
+      <div className="sm:flex hidden px-[2%]">
         <div className="flex justify-between w-full items-center">
-          <div className="p-[2%]">
+          <div className="w-[35%]">
             <h4 className="font-plus_jakara_sans font-semibold text-[20px]">
               Dashboard
             </h4>
           </div>
-          <div className="w-[364px] h-[40px] px-4 bg-transparent flex gap-3  items-center border border-[#DADDDD] rounded-[24px]">
-            <IconContext.Provider value={{ size: "23px" }}>
-              <CiIcons.CiSearch />
-            </IconContext.Provider>
-            <input
-              type="text"
-              className="w-full h-full bg-transparent outline-none "
-              placeholder="Search..."
-            />
-          </div>
-          <div className="flex justify-between items-center">
-            <div>
-              <Image src={calendar} alt="calendar" />
-              <DayTime />
+          <div className="flex items-center w-[65%] justify-between ">
+            <div className="w-[364px] h-[40px] px-4 bg-transparent flex gap-3  items-center border border-[#DADDDD] rounded-[24px]">
+              <IconContext.Provider value={{ size: "23px" }}>
+                <CiIcons.CiSearch />
+              </IconContext.Provider>
+              <input
+                type="text"
+                className="w-full h-full bg-transparent outline-none "
+                placeholder="Search..."
+              />
+            </div>
+
+            <div className="flex gap-5 items-center">
+              <div className="flex gap-2 items-center">
+                <Image src={calendar} alt="calendar" />
+                <DayTime />
+              </div>
+              <div className="flex w-[40px] h-[40px] rounded-full  justify-center items-center border-[1px] border-rgba(255,255,255,0.7) ">
+                <IconContext.Provider value={{ size: "20px" }}>
+                  <GoIcons.GoBell />
+                </IconContext.Provider>
+              </div>
+            </div>
+            <div className=" px-2 py-[3px] border-[1px] gap-3 flex items-center justify-between border-rgba(255,255,255,0.7) rounded-[50px]">
+              <div className="w-[40px] h-[40px]  bg-black rounded-full">
+                <Image
+                  src={man}
+                  className="w-full h-full object-cover rounded-full"
+                  alt="man"
+                />
+              </div>
+              <div className="flex flex-col ">
+                <h5>Justin Bergson</h5>
+                <h5>Justin@gmail.com</h5>
+              </div>
+              <div>
+                <IconContext.Provider value={{ size: "20px" }}>
+                  <RxIcons.RxCaretDown />
+                </IconContext.Provider>
+              </div>
             </div>
           </div>
         </div>

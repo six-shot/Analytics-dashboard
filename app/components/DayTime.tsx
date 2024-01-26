@@ -50,7 +50,7 @@ export default function DayTime() {
         <h5 className=" text-sm">{day}</h5>
         <h6 className="text-[10px] ">{`${month} ${date} ${year}`}</h6>
       </div>
-      <div className="sm:hidden flex">
+      <div className="sm:flex hidden">
         <h6 className="text-sm ">{`${month} ${date}, ${year}`}</h6>
       </div>
     </div>
