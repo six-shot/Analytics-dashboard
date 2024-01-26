@@ -7,11 +7,11 @@ export default function page() {
     <div>
       <div className="flex ">
         <div className='sm:flex hidden'>
-          <div className="w-[80px]  border-r-[1px] border-[#989bac] bg-[#F7F8FA]">
+          <div className="w-[80px] fixed  border-r-[1px] border-[#989bac] bg-[#F7F8FA]">
             <Sidebar />
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full pl-[80px]">
           <Container />
         </div>
       </div>
