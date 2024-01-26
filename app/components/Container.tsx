@@ -5,7 +5,7 @@ import BottomRight from "./BottomRight";
 
 export default function Container() {
   return (
-    <section className=" px-[4%]">
+    <section className=" px-[4%] mt-[25%]">
       <TopRight/>
       <BottomLeft/>
       <BottomRight/>
