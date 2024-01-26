@@ -9,71 +9,78 @@ import Image from "next/image";
 import man from "@/public/man.jpeg";
 import DayTime from "./DayTime";
 import ThemeSwitch from "./ThemeSwitch";
-import logo from "@/public/assets/logo.svg"
+import logo from "@/public/assets/logo.svg";
+import calendar from "@/public/assets/Calendar.svg";
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <header className="w-full fixed top-0 bg-white h-[80px] px-[4%] pt-[2%]">
-      <div className="flex items-center w-full justify-between ">
-        <div className="flex gap-2 items-center">
-          {/* <h5 className=" text-[18px]">MENU</h5> */}
-          <IconContext.Provider value={{ size: "25px", color: "white" }}>
-            <div className="bg-black p-2 rounded-[8px]">
-              <HiIcons.HiMenuAlt4 onClick={() => setNavbar(!navbar)} />
+    <header>
+      <div className="sm:hidden flex">
+        <div className="w-full fixed top-0 bg-white h-[80px] px-[4%] pt-[2%]">
+          <div className="flex items-center w-full justify-between ">
+            <div className="flex gap-2 items-center">
+              {/* <h5 className=" text-[18px]">MENU</h5> */}
+              <IconContext.Provider value={{ size: "25px", color: "white" }}>
+                <div className="bg-black p-2 rounded-[8px]">
+                  <HiIcons.HiMenuAlt4 onClick={() => setNavbar(!navbar)} />
+                </div>
+                <div
+                  className={`${
+                    navbar ? "flex" : "hidden"
+                  } w-full h-screen bg-white absolute top-0 right-0  my-2 px-[4%] pt-[2%] rounded-xl sm:hidden flex flex-col sidebar z-10`}
+                >
+                  <div className="flex w-full justify-between  ">
+                    {" "}
+                    <IconContext.Provider
+                      value={{ color: "black", size: "30px" }}
+                    >
+                      <IoIcons.IoCloseOutline
+                        onClick={() => setNavbar(!navbar)}
+                      />
+                    </IconContext.Provider>
+                    <div>
+                      <h5 className="text-black font-plus_jakara_sans text-xl">
+                        Logout
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-5 justify-center items-center mt-[10%]">
+                    <Image src={logo} alt="logo" />
+                    <h4 className="text-[#34CAA5] text-[28px] font-semibold font-plus_jakara_sans">
+                      GeePay
+                    </h4>
+                  </div>
+                  <nav>
+                    <ul className="flex flex-col gap-5">
+                      <li>Dashboard</li>
+                      <li>Dashboard</li>
+                      <li>Dashboard</li>
+                      <li>Dashboard</li>
+                    </ul>
+                  </nav>
+                </div>
+              </IconContext.Provider>
             </div>
-            <div
-              className={`${
-                navbar ? "flex" : "hidden"
-              } w-full h-screen bg-white absolute top-0 right-0  my-2 px-[4%] pt-[2%] rounded-xl sm:hidden flex flex-col sidebar z-10`}
-            >
-              <div className="flex w-full justify-between  ">
-                {" "}
-                <IconContext.Provider value={{ color: "black", size: "30px" }}>
-                  <IoIcons.IoCloseOutline onClick={() => setNavbar(!navbar)} />
-                </IconContext.Provider>
-                <div>
-                  <h5 className="text-black font-plus_jakara_sans text-xl">
-                    Logout
-                  </h5>
+            <IconContext.Provider value={{ size: "20px" }}>
+              <div className="flex items-center gap-2">
+                <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-full">
+                  <CiIcons.CiSearch />
+                </div>
+                <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-full">
+                  <GoIcons.GoBell />
+                </div>
+                <ThemeSwitch />
+                <div className="w-[50px] h-[50px]  bg-black rounded-full">
+                  <Image
+                    src={man}
+                    className="w-full h-full object-cover rounded-full"
+                    alt="man"
+                  />
                 </div>
               </div>
-              <div className="flex flex-col gap-5 justify-center items-center mt-[10%]">
-                <Image src={logo} alt="logo" />
-                <h4 className="text-[#34CAA5] text-[28px] font-semibold font-plus_jakara_sans">
-                  GeePay
-                </h4>
-              </div>
-              <nav>
-                <ul className="flex flex-col gap-5">
-                  <li>Dashboard</li>
-                  <li>Dashboard</li>
-                  <li>Dashboard</li>
-                  <li>Dashboard</li>
-                </ul>
-              </nav>
-            </div>
-          </IconContext.Provider>
-        </div>
-        <IconContext.Provider value={{ size: "20px" }}>
-          <div className="flex items-center gap-2">
-            <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-[8px]">
-              <CiIcons.CiSearch />
-            </div>
-            <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-[8px]">
-              <GoIcons.GoBell />
-            </div>
-            <ThemeSwitch />
-            <div className="w-[50px] h-[40px]  bg-black rounded-[10px]">
-              <Image
-                src={man}
-                className="w-full h-full object-cover rounded-[10px]"
-                alt="man"
-              />
-            </div>
-          </div>
-        </IconContext.Provider>
+            </IconContext.Provider>
 
-        {/* <IconContext.Provider value={{ size: "20px", color: "black" }}>
+            {/* <IconContext.Provider value={{ size: "20px", color: "black" }}>
           <div className="flex items-center gap-1">
             <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-[8px]">
               <CiIcons.CiSearch />
@@ -91,9 +98,36 @@ export default function Header() {
             </div>
           </div>
         </IconContext.Provider> */}
+          </div>
+          <div>
+            <DayTime />
+          </div>
+        </div>
       </div>
-      <div>
-        <DayTime />
+      <div className="sm:flex hidden">
+        <div className="flex justify-between w-full items-center">
+          <div className="p-[2%]">
+            <h4 className="font-plus_jakara_sans font-semibold text-[20px]">
+              Dashboard
+            </h4>
+          </div>
+          <div className="w-[364px] h-[40px] px-4 bg-transparent flex gap-3  items-center border border-[#DADDDD] rounded-[24px]">
+            <IconContext.Provider value={{ size: "23px" }}>
+              <CiIcons.CiSearch />
+            </IconContext.Provider>
+            <input
+              type="text"
+              className="w-full h-full bg-transparent outline-none "
+              placeholder="Search..."
+            />
+          </div>
+          <div className="flex justify-between items-center">
+            <div>
+              <Image src={calendar} alt="calendar" />
+              <DayTime />
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );

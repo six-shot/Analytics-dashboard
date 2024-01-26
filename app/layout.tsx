@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
 import { Plus_Jakarta_Sans } from "next/font/google"; 
 import "./globals.css";
 import {Providers} from './providers'
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700"],
-  variable: "--font-inter",
-});
+
 
 const plus_jakara_sans = Plus_Jakarta_Sans({
   subsets: ["cyrillic-ext"],
@@ -29,7 +25,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${plus_jakara_sans.variable}${inter.variable}`}
+      className={`${plus_jakara_sans.variable}`}
     >
       <body>
         <Providers>{children}</Providers>
