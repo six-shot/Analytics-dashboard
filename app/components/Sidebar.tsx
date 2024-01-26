@@ -66,7 +66,7 @@ const menuItemsbottom = [
 export default function Sidebar() {
   return (
     <div>
-      <div className="h-screen justify-between  w-full flex  flex-col items-center  ">
+      <div className="h-screen justify-between dark:bg-[#232429] w-full flex  flex-col items-center  ">
         <div className="py-5">
           <Image src={logo} alt="logo" />
         </div>

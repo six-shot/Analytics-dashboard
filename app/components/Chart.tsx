@@ -76,8 +76,7 @@ const data = [
 
 export default function Chart() {
   return (
-    <div className="h-[22rem] bg-white py-4 font-plus_jakara_sans rounded-xl border border-gray-200 flex flex-col flex-1">
-     
+    <div className="h-[22rem] bg-white dark:bg-[#35353D] dark:border-[#35353D] py-4 font-plus_jakara_sans rounded-xl border border-gray-200 flex flex-col flex-1">
       <div className="mt-3 w-full flex-1 text-xs">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
@@ -90,7 +89,7 @@ export default function Chart() {
               left: -10,
               bottom: 0,
             }}
-            barSize={30}
+            barSize={27}
           >
             <CartesianGrid strokeDasharray="3 3 0 0" vertical={false} />
             <XAxis dataKey="name" />
@@ -100,7 +99,7 @@ export default function Chart() {
             <Bar
               dataKey="Expense"
               fill="rgba(52, 202, 165, 0.10)"
-              radius={[10, 10, 0, 0]}
+              radius={[20, 20, 0, 0]}
             />
           </BarChart>
         </ResponsiveContainer>

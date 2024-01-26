@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function BottomRight() {
   return (
-    <div className="w-full bg-white border border-[#EDF2F7] p-[5%] rounded-xl mt-4 ">
+    <div className="w-full bg-white dark:bg-[#35353D] dark:border-[#35353D] border border-[#EDF2F7] p-[5%] rounded-xl mt-4 ">
       <div className="flex justify-between items-center mb-2">
         <h5 className="font-semibold text-[#26282C] font-plus_jakara_sans">
           Top Platform
