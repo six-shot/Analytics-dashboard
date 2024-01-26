@@ -97,7 +97,7 @@ export default function Chart() {
             <CartesianGrid strokeDasharray="3 3 0 0" vertical={false} />
             <XAxis dataKey="name" />
             <YAxis />
-            <Tooltip />
+          <Tooltip  cursor={{ fill: "transparent" }} />
 
             <Bar
               dataKey="Expense"
