@@ -6,9 +6,10 @@ import ThemeSwitch from "./components/ThemeSwitch";
 export default function Home() {
   return (
     <main>
-      <Header />
+      {/* <Header />
       <Container/>
-      
+       */}
+       
       
     </main>
   );
