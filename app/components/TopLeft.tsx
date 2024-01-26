@@ -1,7 +1,8 @@
 import React from 'react'
+import Chart from './Chart'
 
 export default function TopLeft() {
   return (
-    <div>Bar Chart</div>
+    <div><Chart/></div>
   )
 }

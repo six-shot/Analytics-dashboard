@@ -1,60 +1,110 @@
-// "use client";
-// import React from "react";
+"use client";
+import React from "react";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
-// import {
-//   PieChart,
-//   Pie,
-//   Tooltip,
-//   BarChart,
-//   XAxis,
-//   YAxis,
-//   Legend,
-//   CartesianGrid,
-//   Bar,
-// } from "recharts";
+const data = [
+  {
+    name: "Jan",
+    Expense: 4000,
+    Income: 2400,
+  },
+  {
+    name: "Feb",
+    Expense: 3000,
+    Income: 1398,
+  },
+  {
+    name: "Mar",
+    Expense: 2000,
+    Income: 9800,
+  },
+  {
+    name: "Apr",
+    Expense: 2780,
+    Income: 3908,
+  },
+  {
+    name: "May",
+    Expense: 1890,
+    Income: 4800,
+  },
+  {
+    name: "Jun",
+    Expense: 2390,
+    Income: 3800,
+  },
+  {
+    name: "July",
+    Expense: 3490,
+    Income: 4300,
+  },
+  {
+    name: "Aug",
+    Expense: 2000,
+    Income: 9800,
+  },
+  {
+    name: "Sep",
+    Expense: 2780,
+    Income: 3908,
+  },
+  {
+    name: "Oct",
+    Expense: 1890,
+    Income: 4800,
+  },
+  {
+    name: "Nov",
+    Expense: 2390,
+    Income: 3800,
+  },
+  {
+    name: "Dec",
+    Expense: 3490,
+    Income: 4300,
+  },
+];
 
-// const Chart = () => {
-//   const data = [
-//     { name: "Facebook", users: 2000000000 },
-//     { name: "Instagram", users: 1500000000 },
-//     { name: "Twiter", users: 1000000000 },
-//     { name: "Telegram", users: 500000000 },
-//   ];
-
-//   return (
-//     <div className="flex justify-center items-center">
+export default function Chart() {
+  return (
+    <div className="h-[22rem] bg-white p-4 rounded-xl border border-gray-200 flex flex-col flex-1">
      
-//       <div className="App">
-        
-//     <div>
-//         <BarChart
-//           width={500}
-//           height={500}
-//           data={data}
-//           margin={{
-//             top: 5,
-//             right: 30,
-//             left: 80,
-//             bottom: 5,
-//           }}
-//           barSize={20}
-//         >
-//           <XAxis
-//             dataKey="name"
-//             scale="point"
-//             padding={{ left: 10, right: 10 }}
-//           />
-//           <YAxis />
-//           <Tooltip />
-//           <Legend />
-//           <CartesianGrid strokeDasharray="6 6" />
-//           <Bar dataKey="users" fill="#8884d8" background={{ fill: "#eee" }} />
-//         </BarChart>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+      <div className="mt-3 w-full flex-1 text-xs">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart
+            width={500}
+            height={300}
+            data={data}
+            margin={{
+              top: 20,
+              right: 10,
+              left: -10,
+              bottom: 0,
+            }}
+            barSize={20}
+          >
+            <CartesianGrid strokeDasharray="3 3 0 0" vertical={false} />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
 
-// export default Chart;
-
+            <Bar
+              dataKey="Expense"
+              fill="rgba(52, 202, 165, 0.10)"
+              radius={[10, 10, 0, 0]}
+            />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
+  );
+}
