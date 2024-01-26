@@ -1,16 +1,17 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { IconContext } from "react-icons";
 import * as HiIcons from "react-icons/hi";
 import * as CiIcons from "react-icons/ci";
-import * as IoIcons from "react-icons/io5"
+import * as IoIcons from "react-icons/io5";
 import * as GoIcons from "react-icons/go";
 import Image from "next/image";
-import man from "@/public/man.jpeg"
+import man from "@/public/man.jpeg";
 import DayTime from "./DayTime";
 import ThemeSwitch from "./ThemeSwitch";
+import logo from "@/public/assets/logo.svg"
 export default function Header() {
-    const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(false);
   return (
     <header className="w-full fixed top-0 bg-white h-[80px] px-[4%] pt-[2%]">
       <div className="flex items-center w-full justify-between ">
@@ -23,16 +24,33 @@ export default function Header() {
             <div
               className={`${
                 navbar ? "flex" : "hidden"
-              } w-full h-screen bg-white absolute top-0 right-0  my-2  rounded-xl sm:hidden flex sidebar z-10`}
+              } w-full h-screen bg-white absolute top-0 right-0  my-2 px-[4%] pt-[2%] rounded-xl sm:hidden flex flex-col sidebar z-10`}
             >
-              <IconContext.Provider value={{ color: "black" }}>
-                <IoIcons.IoCloseOutline onClick={() => setNavbar(!navbar)} />
-              </IconContext.Provider>
-              <ul className="list-none flex flex-col ">
-                <li>yess</li>
-                <li>Home</li>
-                <li>Blog</li> <li>Contact </li>
-              </ul>
+              <div className="flex w-full justify-between  ">
+                {" "}
+                <IconContext.Provider value={{ color: "black", size: "30px" }}>
+                  <IoIcons.IoCloseOutline onClick={() => setNavbar(!navbar)} />
+                </IconContext.Provider>
+                <div>
+                  <h5 className="text-black font-plus_jakara_sans text-xl">
+                    Logout
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col gap-5 justify-center items-center mt-[10%]">
+                <Image src={logo} alt="logo" />
+                <h4 className="text-[#34CAA5] text-[28px] font-semibold font-plus_jakara_sans">
+                  GeePay
+                </h4>
+              </div>
+              <nav>
+                <ul className="flex flex-col gap-5">
+                  <li>Dashboard</li>
+                  <li>Dashboard</li>
+                  <li>Dashboard</li>
+                  <li>Dashboard</li>
+                </ul>
+              </nav>
             </div>
           </IconContext.Provider>
         </div>
