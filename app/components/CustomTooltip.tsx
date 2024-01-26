@@ -1,15 +1,17 @@
-export const CustomTooltip = ({ active, payload, label }) => {
+import React from "react";
+import { TooltipProps } from "recharts";
+
+export const CustomTooltip = ({
+  active,
+  payload,
+  label,
+}: TooltipProps<any, any>) => {
   if (active && payload && payload.length) {
+    const totalValue = payload.reduce((sum, entry) => sum + entry.value, 0);
+
     return (
       <div className="custom-tooltip">
-        <p className="bg-[#34CAA5] text-white p-2 rounded-xl">{`${label} : ${payload[0].value}`}</p>
-        <div>
-          {payload.map((pld) => (
-            <div style={{ display: "inline-block", padding: 10 }}>
-              <div style={{ color: pld.fill }}>{pld.value}</div>
-            </div>
-          ))}
-        </div>
+        <p className="bg-[#34CAA5] text-white p-2 rounded-xl">{`${label} : ${totalValue}`}</p>
       </div>
     );
   }
