@@ -7,7 +7,7 @@ import Up from "./up";
 export default function TopRight() {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-      <div className="w-full bg-white dark:bg-[#FF4A55] dark:border-[#FF4A55] border border-[#EDF2F7] p-[5%] rounded-xl">
+      <div className="w-full bg-white  border border-[#EDF2F7] p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={boxtick} alt="box-tick" />
@@ -34,7 +34,7 @@ export default function TopRight() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white dark:bg-[#6160DC] dark:border-[#6160DC] border border-[#EDF2F7] p-[5%] rounded-xl">
+      <div className="w-full bg-white  border border-[#EDF2F7] p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={boxtick} alt="box-tick" />
@@ -61,7 +61,7 @@ export default function TopRight() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white border dark:bg-[#54C5EB] dark:border-[#54C5EB]  border-[#EDF2F7] p-[5%] rounded-xl">
+      <div className="w-full bg-white border  border-[#EDF2F7] p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={boxtick} alt="box-tick" />
@@ -88,7 +88,7 @@ export default function TopRight() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white border border-[#EDF2F7] dark:bg-[#FFB74A] dark:border-[#FFB74A] p-[5%] rounded-xl">
+      <div className="w-full bg-white border border-[#EDF2F7]  p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={boxtick} alt="box-tick" />
