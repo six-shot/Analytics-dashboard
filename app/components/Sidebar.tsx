@@ -3,7 +3,7 @@ import logo from "@/public/assets/Logo.svg";
 import React from "react";
 import dashboard from "@/public/assets/dashboard.svg";
 import setting from "@/public/assets/setting.svg";
-import logout from "@/public/assets/logout.svg";
+import logout from "@/public/assets/logout.svg"
 import arrowright from "@/public/assets/arrow-right.svg";
 import trendup from "@/public/assets/trend-up.svg";
 import profile from "@/public/assets/profile-2user.svg";
