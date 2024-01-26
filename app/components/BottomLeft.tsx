@@ -3,24 +3,24 @@ import React from "react";
 export default function BottomLeft() {
   return (
     <section>
-      <div className="w-full bg-white border border-[#EDF2F7] p-[5%] rounded-xl">
+      <div className="w-full bg-white border border-[#EDF2F7] p-[5%] rounded-xl mt-4">
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[460px]">
+          <table className="w-full min-w-[600px]">
             <thead>
-              <tr>
-                <th className="text-[12px] uppercase tracking-wide font-medium text-gray-400  text-left">
+              <tr className="border-b border-[#EDF2F6]">
+                <th className="text-[12px] uppercase tracking-wide  text-[#9CA4AB] font-plus_jakara_sans text-left">
                   Name
                 </th>
-                <th className="text-[12px] uppercase tracking-wide font-medium text-gray-400  py-2 text-left">
+                <th className="text-[12px] uppercase tracking-wide  text-[#9CA4AB] font-plus_jakara_sans   py-2 text-left">
                   Date
                 </th>
-                <th className="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2  text-left ">
+                <th className="text-[12px] uppercase tracking-wide  text-[#9CA4AB] font-plus_jakara_sans  py-2  text-left ">
                   Amount
                 </th>
-                <th className="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2  text-left ">
+                <th className="text-[12px] uppercase tracking-wide text-[#9CA4AB] font-plus_jakara_sans  py-2  text-left ">
                   Status
                 </th>
-                <th className="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2  text-left ">
+                <th className="text-[12px] uppercase tracking-wide  text-[#9CA4AB] font-plus_jakara_sans  py-2  text-left ">
                   Invoice
                 </th>
               </tr>
@@ -31,61 +31,157 @@ export default function BottomLeft() {
                   <div className="flex items-center">
                     <a
                       href="#"
-                      className="text-gray-600 text-sm font-medium hover:text-blue-500  truncate"
+                      className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
                     >
                       Marcus Bergson
                     </a>
                   </div>
                 </td>
-                <td className="py-2  ">
-                  <span className="text-[13px] font-medium text-emerald-500">
+                <td className="py-2 ">
+                  <span className="text-sm font-plus_jakara_sans  text-[#737373]">
                     Nov 15, 2023
                   </span>
                 </td>
                 <td className="py-2  ">
-                  <span className="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">
+                  <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
                     $80,000
                   </span>
                 </td>
                 <td className="py-2  ">
-                  <span className="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">
+                  <span className="inline-block  text-[#34CAA5] text-sm font-plus_jakara_sans  leading-none">
                     Paid
                   </span>
                 </td>
-                <td className="py-2  ">
-                  <span className="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">
+                <td className="py-2 ">
+                  <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
                     View
                   </span>
                 </td>
               </tr>
               <tr className="border-b border-[#EDF2F6]">
-                <td className="py-2 ">
+                <td className="py-2  ">
                   <div className="flex items-center">
                     <a
                       href="#"
-                      className="text-gray-600 text-sm font-medium hover:text-blue-500  truncate"
+                      className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
                     >
                       Marcus Bergson
                     </a>
                   </div>
                 </td>
                 <td className="py-2  ">
-                  <span className="text-[13px] font-medium text-emerald-500">
+                  <span className="text-sm font-plus_jakara_sans  text-[#737373]">
                     Nov 15, 2023
                   </span>
                 </td>
                 <td className="py-2  ">
-                  <span className="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">
+                  <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
                     $80,000
                   </span>
                 </td>
                 <td className="py-2  ">
-                  <span className="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">
+                  <span className="inline-block  text-[#34CAA5] text-sm font-plus_jakara_sans  leading-none">
                     Paid
                   </span>
                 </td>
+                <td className="py-2 ">
+                  <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
+                    View
+                  </span>
+                </td>
+              </tr>
+              <tr className="border-b border-[#EDF2F6]">
                 <td className="py-2  ">
-                  <span className="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">
+                  <div className="flex items-center">
+                    <a
+                      href="#"
+                      className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
+                    >
+                      Marcus Bergson
+                    </a>
+                  </div>
+                </td>
+                <td className="py-2  ">
+                  <span className="text-sm font-plus_jakara_sans  text-[#737373]">
+                    Nov 15, 2023
+                  </span>
+                </td>
+                <td className="py-2  ">
+                  <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
+                    $80,000
+                  </span>
+                </td>
+                <td className="py-2  ">
+                  <span className="inline-block  text-[#34CAA5] text-sm font-plus_jakara_sans  leading-none">
+                    Paid
+                  </span>
+                </td>
+                <td className="py-2 ">
+                  <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
+                    View
+                  </span>
+                </td>
+              </tr>
+              <tr className="border-b border-[#EDF2F6]">
+                <td className="py-2  ">
+                  <div className="flex items-center">
+                    <a
+                      href="#"
+                      className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
+                    >
+                      Marcus Bergson
+                    </a>
+                  </div>
+                </td>
+                <td className="py-2  ">
+                  <span className="text-sm font-plus_jakara_sans  text-[#737373]">
+                    Nov 15, 2023
+                  </span>
+                </td>
+                <td className="py-2  ">
+                  <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
+                    $80,000
+                  </span>
+                </td>
+                <td className="py-2  ">
+                  <span className="inline-block  text-[#34CAA5] text-sm font-plus_jakara_sans  leading-none">
+                    Paid
+                  </span>
+                </td>
+                <td className="py-2 ">
+                  <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
+                    View
+                  </span>
+                </td>
+              </tr>
+              <tr className="border-b border-[#EDF2F6]">
+                <td className="py-2  ">
+                  <div className="flex items-center">
+                    <a
+                      href="#"
+                      className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
+                    >
+                      Marcus Bergson
+                    </a>
+                  </div>
+                </td>
+                <td className="py-2  ">
+                  <span className="text-sm font-plus_jakara_sans  text-[#737373]">
+                    Nov 15, 2023
+                  </span>
+                </td>
+                <td className="py-2  ">
+                  <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
+                    $80,000
+                  </span>
+                </td>
+                <td className="py-2  ">
+                  <span className="inline-block  text-[#34CAA5] text-sm font-plus_jakara_sans  leading-none">
+                    Paid
+                  </span>
+                </td>
+                <td className="py-2 ">
+                  <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
                     View
                   </span>
                 </td>
