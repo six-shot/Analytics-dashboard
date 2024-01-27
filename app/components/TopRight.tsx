@@ -20,7 +20,7 @@ export default function TopRight() {
           <Up />
         </div>
         <div className="mt-2">
-          <h5 className="font-plus_jakara_sans font-medium text-[#898989] text-lg">
+          <h5 className="font-plus_jakara_sans font-medium text-[#898989] dark:text-[#34CAA5] text-lg">
             Total Order
           </h5>
           <h5 className="font-semibold font-plus_jakara_sans text-[#3A3F51] text-2xl">
@@ -47,7 +47,7 @@ export default function TopRight() {
           <Down />
         </div>
         <div className="mt-2">
-          <h5 className="font-plus_jakara_sans font-medium text-[#898989] text-lg">
+          <h5 className="font-plus_jakara_sans font-medium text-[#898989] dark:text-[#ED544E]  text-lg">
             Total Refund
           </h5>
           <h5 className="font-semibold font-plus_jakara_sans text-[#3A3F51] text-2xl">
@@ -74,7 +74,7 @@ export default function TopRight() {
           <Down />
         </div>
         <div className="mt-2">
-          <h5 className="font-plus_jakara_sans font-medium text-[#898989] text-lg">
+          <h5 className="font-plus_jakara_sans font-medium dark:text-[#ED544E] text-[#898989] text-lg">
             Average Sales
           </h5>
           <h5 className="font-semibold font-plus_jakara_sans text-[#3A3F51] text-2xl">
@@ -101,7 +101,7 @@ export default function TopRight() {
           <Up />
         </div>
         <div className="mt-2">
-          <h5 className="font-plus_jakara_sans font-medium text-[#898989] text-lg">
+          <h5 className="font-plus_jakara_sans font-medium text-[#898989] dark:text-[#34CAA5] text-lg">
             Total Income
           </h5>
           <h5 className="font-semibold font-plus_jakara_sans text-[#3A3F51] text-2xl">
