@@ -52,7 +52,7 @@ const lastorders = [
 export default function BottomLeft() {
   return (
     <section>
-      <div className="w-full bg-white  border border-[#EDF2F7]  p-[4%] rounded-xl mt-4 ">
+      <div className="w-full bg-white dark:bg-[#161619] border border-[#EDF2F7]  p-[4%] rounded-xl mt-4 ">
         <div className="flex justify-between items-center">
           <h5 className="font-semibold text-[#26282C] font-plus_jakara_sans">
             Last order
@@ -83,7 +83,7 @@ export default function BottomLeft() {
               </tr>
             </thead>
             <tbody>
-              {lastorders.map((order)=>{
+              {lastorders.map((order) => {
                 return (
                   <tr key={order.name} className="border-b border-[#EDF2F6]">
                     <td className="py-2  ">
@@ -127,7 +127,7 @@ export default function BottomLeft() {
                       </span>
                     </td>
                     <td className="py-4 flex gap-2 items-center">
-                      <Image src={view} alt="view"/>
+                      <Image src={view} alt="view" />
                       <span className="inline-block capitalize font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
                         {order.invoice}
                       </span>
@@ -135,7 +135,6 @@ export default function BottomLeft() {
                   </tr>
                 );
               })}
-             
             </tbody>
           </table>
         </div>
