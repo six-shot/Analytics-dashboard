@@ -12,6 +12,15 @@ import DayTime from "./DayTime";
 import ThemeSwitch from "./ThemeSwitch";
 import Logo from "@/public/assets/Logo.svg";
 import calendar from "@/public/assets/Calendar.svg";
+import logout from "@/public/assets/logout.svg"
+import dashboard from "@/public/assets/dashboard.svg";
+import setting from "@/public/assets/setting.svg";
+import arrowright from "@/public/assets/arrow-right.svg";
+import trendup from "@/public/assets/trend-up.svg";
+import profile from "@/public/assets/profile-2user.svg";
+import info from "@/public/assets/info-circle.svg";
+import discount from "@/public/assets/discount-shape.svg";
+import box from "@/public/assets/box.svg";
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
   return (
@@ -40,23 +49,37 @@ export default function Header() {
                       />
                     </IconContext.Provider>
                     <div>
-                      <h5 className="text-black font-plus_jakara_sans text-xl">
-                        Logout
-                      </h5>
+                      <Image src={logout} alt="logout" />
                     </div>
                   </div>
                   <div className="flex flex-col gap-5 justify-center items-center mt-[10%]">
                     <Image src={Logo} alt="logo" />
-                    <h4 className="text-[#34CAA5] text-[28px] font-semibold font-plus_jakara_sans">
-                      GeePay
+                    <h4 className="text-[#34CAA5]  text-[24px] font-semibold font-plus_jakara_sans">
+                      GeegPay
                     </h4>
                   </div>
-                  <nav>
-                    <ul className="flex flex-col gap-5">
-                      <li>Dashboard</li>
-                      <li>Dashboard</li>
-                      <li>Dashboard</li>
-                      <li>Dashboard</li>
+                  <nav className="mt-5">
+                    <ul className="flex font-plus_jakara_sans flex-col gap-5">
+                      <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
+                        <Image src={dashboard} alt="dahboard" />
+                        <h6>Dashboard</h6>
+                      </li>
+                      <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
+                        <Image src={trendup} alt="trendup" />
+                        <h6> Trend Up</h6>
+                      </li>
+                      <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
+                        <Image src={profile} alt="profile" />
+                        <h6> Profile User </h6>
+                      </li>
+                      <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
+                        <Image src={discount} alt="discount" />
+                        <h6> Discount</h6>
+                      </li>
+                      <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
+                        <Image src={info} alt="info" />
+                        <h6> Info</h6>
+                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -80,8 +103,6 @@ export default function Header() {
                 </div>
               </div>
             </IconContext.Provider>
-
-           
           </div>
           <div>
             <DayTime />
