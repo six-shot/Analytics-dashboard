@@ -113,13 +113,13 @@ export default function Header() {
       </div>
       <div className="sm:flex hidden border-b border-[#E5EAEF] dark:border-[#34CAA5] dark:bg-black bg-[#FAFAFA] py-2 px-[2%]">
         <div className="flex justify-between w-full  items-center">
-          <div className="w-[35%]">
+          <div className="lg:w-[35%]">
             <h4 className="font-plus_jakara_sans font-semibold text-[20px]">
               Dashboard
             </h4>
           </div>
-          <div className="flex items-center w-[65%] justify-between ">
-            <div className="w-[364px] h-[40px] px-4 bg-transparent flex gap-3  items-center border border-[#DADDDD] rounded-[24px]">
+          <div className="flex items-center gap-5 lg:gap-0 lg:w-[65%] justify-between ">
+            <div className="lg:w-[364px] w-[200px] h-[40px] px-4 bg-transparent flex gap-3  items-center border border-[#DADDDD] rounded-[24px]">
               <IconContext.Provider value={{ size: "23px" }}>
                 <CiIcons.CiSearch />
               </IconContext.Provider>
@@ -132,7 +132,7 @@ export default function Header() {
 
             <div className="flex gap-5 items-center">
               <div className="flex gap-2 items-center">
-                <Image src={calendar} alt="calendar" />
+                <Image src={calendar} alt="calendar" className="lg:flex hidden" />
                 <DayTime />
               </div>
               <div className="flex w-[40px] h-[40px] rounded-full  justify-center items-center border-[1px] border-rgba(255,255,255,0.7) ">
@@ -141,15 +141,15 @@ export default function Header() {
                 </IconContext.Provider>
               </div>
             </div>
-            <div className=" px-2 py-[3px] border-[1px] gap-3 flex items-center justify-between border-rgba(255,255,255,0.7) rounded-[50px]">
-              <div className="w-[40px] h-[40px]  bg-black rounded-full">
+            <div className=" px-2 py-[3px] lg:border-[1px]  gap-3 flex items-center justify-between lg:border-rgba(255,255,255,0.7) rounded-[50px]">
+              <div className="w-[40px] h-[40px]  bg-black rounded-full ">
                 <Image
                   src={man}
-                  className="w-full h-full object-cover rounded-full"
+                  className="w-full h-full object-cover rounded-full "
                   alt="man"
                 />
               </div>
-              <div className="flex flex-col font-inter ">
+              <div className="lg:flex hidden flex-col font-inter ">
                 <h5 className="text-base">Justin Bergson</h5>
                 <h5 className="">Justin@gmail.com</h5>
               </div>
