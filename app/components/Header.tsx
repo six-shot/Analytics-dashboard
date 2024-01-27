@@ -37,7 +37,7 @@ export default function Header() {
                 <div
                   className={`${
                     navbar ? "flex" : "hidden"
-                  } w-full h-screen bg-white absolute top-0 right-0  my-2 px-[4%] pt-[2%] rounded-xl sm:hidden flex flex-col sidebar z-10`}
+                  } w-full h-screen dark:bg-[#161619] bg-[#FAFAFA] absolute top-0 right-0  my-2 px-[4%] pt-[2%] rounded-xl sm:hidden flex flex-col sidebar z-10`}
                 >
                   <div className="flex w-full justify-between  ">
                     {" "}
@@ -109,7 +109,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="sm:flex hidden border-b border-[#E5EAEF] bg-[#FAFAFA] py-2 px-[2%]">
+      <div className="sm:flex hidden border-b border-[#E5EAEF] dark:border-[#34CAA5] dark:bg-[#25262C] bg-[#FAFAFA] py-2 px-[2%]">
         <div className="flex justify-between w-full  items-center">
           <div className="w-[35%]">
             <h4 className="font-plus_jakara_sans font-semibold text-[20px]">
