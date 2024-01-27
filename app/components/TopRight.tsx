@@ -39,7 +39,7 @@ export default function TopRight() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white  border border-[#EDF2F7] p-[5%] rounded-xl">
+      <div className="w-full bg-white dark:bg-[#161619]  border border-[#EDF2F7] p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={rotate} alt="box-tick" />
@@ -66,7 +66,7 @@ export default function TopRight() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white border  border-[#EDF2F7] p-[5%] rounded-xl">
+      <div className="w-full bg-white dark:bg-[#161619]  border  border-[#EDF2F7] p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={shopping} alt="box-tick" />
@@ -93,7 +93,7 @@ export default function TopRight() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white border border-[#EDF2F7]  p-[5%] rounded-xl">
+      <div className="w-full bg-white dark:bg-[#161619]  border border-[#EDF2F7]  p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={coin} alt="box-tick" />
