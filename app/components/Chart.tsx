@@ -69,7 +69,7 @@ const data = [
 export default function Chart() {
   return (
     <div className="h-[24rem] overflow-y-hidden overflow-x-auto bg-white sm:pl-[1%] pl-[2%] pr-[3%] dark:bg-[#161619] dark:border dark:border-[#161619] py-4 font-plus_jakara_sans rounded-xl border border-gray-200 flex flex-col flex-1">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-2">
         <h5 className="font-semibold text-[#26282C] dark:text-[#EDF2F6]  px-[2%] font-plus_jakara_sans  ">
           Sales Trend
         </h5>
