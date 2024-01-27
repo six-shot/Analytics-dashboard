@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import boxtick from "@/public/assets/box-tick.svg";
+import shopping from "@/public/assets/shopping-cart.svg";
+import coin from "@/public/assets/coin.svg";
+import rotate from "@/public/assets/3d-rotate.svg";
 import trendingup from "@/public/assets/trending-up.svg";
 import trendingdown from "@/public/assets/trending-down.svg";
 import Up from "./up";
@@ -39,7 +42,7 @@ export default function TopRight() {
       <div className="w-full bg-white  border border-[#EDF2F7] p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
-            <Image src={boxtick} alt="box-tick" />
+            <Image src={rotate} alt="box-tick" />
           </div>
           <Down />
         </div>
@@ -66,7 +69,7 @@ export default function TopRight() {
       <div className="w-full bg-white border  border-[#EDF2F7] p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
-            <Image src={boxtick} alt="box-tick" />
+            <Image src={shopping} alt="box-tick" />
           </div>
           <Down />
         </div>
@@ -93,7 +96,7 @@ export default function TopRight() {
       <div className="w-full bg-white border border-[#EDF2F7]  p-[5%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
-            <Image src={boxtick} alt="box-tick" />
+            <Image src={coin} alt="box-tick" />
           </div>
           <Up />
         </div>
