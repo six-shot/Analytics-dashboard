@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header>
       <div className="sm:hidden flex">
-        <div className="w-full fixed top-0 z-10 bg-white h-[80px] px-[4%] pt-[2%]">
+        <div className="w-full fixed top-0 z-10 bg-white  h-[100px] px-[4%] py-[2%]">
           <div className="flex items-center w-full justify-between ">
             <div className="flex gap-2 items-center">
               {/* <h5 className=" text-[18px]">MENU</h5> */}
@@ -81,24 +81,7 @@ export default function Header() {
               </div>
             </IconContext.Provider>
 
-            {/* <IconContext.Provider value={{ size: "20px", color: "black" }}>
-          <div className="flex items-center gap-1">
-            <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-[8px]">
-              <CiIcons.CiSearch />
-            </div>
-
-            <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-[8px]">
-              <GoIcons.GoBell />
-            </div>
-            <div className="w-[50px] h-[40px]  bg-black rounded-[10px]">
-              <Image
-                src={man}
-                className="w-full h-full object-cover rounded-[10px]"
-                alt="man"
-              />
-            </div>
-          </div>
-        </IconContext.Provider> */}
+           
           </div>
           <div>
             <DayTime />
