@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <header>
       <div className="sm:hidden flex">
-        <div className="w-full fixed top-0 z-10 bg-white dark:bg-black flex justify-center  h-[100px] px-[4%]  flex-col">
+        <div className="w-full fixed top-0 z-10 bg-white dark:bg-black dark:border-b  dark:border-[#34CAA5] flex justify-center  h-[100px] px-[4%]  flex-col">
           <div className="flex items-center w-full justify-between ">
             <div className="flex gap-2 items-center">
               {/* <h5 className=" text-[18px]">MENU</h5> */}
