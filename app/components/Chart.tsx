@@ -70,13 +70,13 @@ export default function Chart() {
   return (
     <div className="h-[24rem] overflow-y-hidden overflow-x-auto bg-white sm:pl-[1%] pl-[2%] pr-[3%] dark:bg-[#161619] dark:border dark:border-[#161619] py-4 font-plus_jakara_sans rounded-xl border border-gray-200 flex flex-col flex-1">
       <div className="flex justify-between items-center">
-        <h5 className="font-semibold text-[#26282C] dark:text-[#EDF2F6]  px-[2%] font-plus_jakara_sans  pb-3">
+        <h5 className="font-semibold text-[#26282C] dark:text-[#EDF2F6]  px-[2%] font-plus_jakara_sans  ">
           Sales Trend
         </h5>
-        <div className="flex items-center gap-3">
-          <h5>Short by:</h5>
-          <div className="w-[120px] px-4 h-[38px] flex justify-between items-center border border-[#E1DFDF] rounded-[20px]">
-            <h5 className="text-sm font-plus_jakara_sans">Weekly</h5>
+        <div className="flex items-center sm:gap-3 gap-2">
+          <h5 className="text-sm font-medium">Short by:</h5>
+          <div className="sm:w-[110px] w-[80px] px-3 sm:h-[38px] h-[34px] flex justify-between items-center text-sm border border-[#E1DFDF] rounded-[20px]">
+            <h5 className="text-xs font-plus_jakara_sans">Weekly</h5>
             <RxIcons.RxCaretDown className="text-[25px]"/>
           </div>
         </div>
