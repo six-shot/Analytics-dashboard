@@ -80,4 +80,18 @@
 
 
 
+.act::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 14%;
+    height: 20px;
+    width: 3px;
+    
+    background-color: crimson;
+ 
+}
+
+
+
 

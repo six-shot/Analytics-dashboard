@@ -1,6 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import man from "@/public/man.jpeg";
+
+import man2 from "@/public/assets/assets/man2.jpeg";
+import man3 from "@/public/assets/assets/man3.jpeg";
+import man4 from "@/public/assets/assets/man4.jpeg";
+import man5 from "@/public/assets/assets/man5.jpeg";
+import man6 from "@/public/assets/assets/man6.jpeg";
 import view from "@/public/assets/document-download.svg"
 const lastorders = [
   {
@@ -10,7 +16,7 @@ const lastorders = [
     Amount: "$80,000",
     invoice: "view",
     path: "/dashboard",
-    icon: man,
+    icon: man2,
   },
   {
     name: "Jaydon Vaccaro",
@@ -19,7 +25,7 @@ const lastorders = [
     Amount: "$150,000",
     invoice: "view",
     path: "/dashboard",
-    icon: man,
+    icon: man3,
   },
   {
     name: "Corey Schleifer",
@@ -28,7 +34,7 @@ const lastorders = [
     Amount: "$87,000",
     invoice: "view",
     path: "/dashboard",
-    icon: man,
+    icon: man4,
   },
   {
     name: "Cooper Press",
@@ -37,7 +43,7 @@ const lastorders = [
     Amount: "$100,000",
     invoice: "view",
     path: "/dashboard",
-    icon: man,
+    icon: man5,
   },
   {
     name: "Phillip Lubin",
@@ -46,7 +52,7 @@ const lastorders = [
     Amount: "$78,000",
     invoice: "view",
     path: "/dashboard",
-    icon: man,
+    icon: man6,
   },
 ];
 export default function BottomLeft() {

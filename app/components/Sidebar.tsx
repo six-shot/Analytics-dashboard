@@ -76,17 +76,17 @@ export default function Sidebar() {
           <div className="h-[60%] flex flex-col items-center ">
             <ul className="flex   gap-4 mb-4  flex-col">
               {menuItems.map((cat) => (
-                <li key={cat.title} className="flex   flex-col">
+                <li key={cat.title} className="flex   flex-col relative act">
                   <Image src={cat.icon} alt="icon" />
                 </li>
               ))}
             </ul>
-            <ThemeSwitch/>
+            <ThemeSwitch />
           </div>
           <div className="h-[30%]  ">
             <ul className="flex gap-6 h-full   flex-col">
               {menuItemsbottom.map((catt) => (
-                <li key={catt.title} className="flex gap-4  flex-col">
+                <li key={catt.title} className="flex gap-4  flex-col w-full ">
                   <Image src={catt.icon} alt="icon" />
                 </li>
               ))}

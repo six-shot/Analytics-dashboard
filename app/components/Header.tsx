@@ -21,6 +21,7 @@ import profile from "@/public/assets/profile-2user.svg";
 import info from "@/public/assets/info-circle.svg";
 import discount from "@/public/assets/discount-shape.svg";
 import box from "@/public/assets/box.svg";
+import { RiLogoutCircleLine } from "react-icons/ri";
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
   return (
@@ -37,7 +38,7 @@ export default function Header() {
                 <div
                   className={`${
                     navbar ? "flex" : "hidden"
-                  } w-full h-screen dark:bg-[#161619] bg-[#FAFAFA] absolute top-0 right-0  my-2 px-[4%] pt-[2%] rounded-xl sm:hidden flex flex-col sidebar z-10`}
+                  } w-full h-screen dark:bg-[#161619] bg-[#FAFAFA] absolute top-0 right-0   px-[4%] pt-[2%]  sm:hidden flex flex-col sidebar z-10`}
                 >
                   <div className="flex w-full justify-between  ">
                     {" "}
@@ -49,7 +50,7 @@ export default function Header() {
                       />
                     </IconContext.Provider>
                     <div>
-                      <Image src={logout} alt="logout" />
+                      <RiLogoutCircleLine />
                     </div>
                   </div>
                   <div className="flex flex-col gap-5 justify-center items-center mt-[10%]">
@@ -61,7 +62,7 @@ export default function Header() {
                   <nav className="mt-5">
                     <ul className="flex font-plus_jakara_sans flex-col gap-5">
                       <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
-                        <Image src={dashboard} alt="dahboard" />
+                        <RiLogoutCircleLine />
                         <h6>Dashboard</h6>
                       </li>
                       <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
