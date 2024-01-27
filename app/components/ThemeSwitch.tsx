@@ -36,7 +36,7 @@ export default function ThemeSwitch() {
         </div>
       </div>
       <div className="sm:flex hidden">
-        <div className="flex flex-col bg-white px-1.5 py-2 rounded-[100px] items-center gap-3">
+        <div className="flex flex-col bg-white dark:bg-[#161619] px-1.5 py-2 rounded-[100px] items-center gap-3">
           <button
             className="p-1.5 bg-[#34CAA5] rounded-full"
             onClick={() => setTheme("light")}

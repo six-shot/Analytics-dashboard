@@ -72,7 +72,7 @@ export default function Sidebar() {
           <Image src={logo} alt="logo" />
         </div>
 
-        <div className="flex flex-col justify-between mt-5 h-full">
+        <div className="flex flex-col items-center justify-between mt-5 h-full">
           <div className="h-[60%] flex flex-col items-center ">
             <ul className="flex   gap-4 mb-4  flex-col">
               {menuItems.map((cat) => (

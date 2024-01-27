@@ -52,9 +52,9 @@ const lastorders = [
 export default function BottomLeft() {
   return (
     <section>
-      <div className="w-full bg-white dark:bg-[#161619] border border-[#EDF2F7] dark:border dark:border-[#161619] p-[4%] rounded-xl mt-4 ">
+      <div className="w-full bg-white dark:bg-[#161619] border border-[#EDF2F7] dark:border dark:border-[#161619] p-[5%] sm:p-[3%] rounded-xl mt-4 ">
         <div className="flex justify-between items-center">
-          <h5 className="font-semibold text-[#26282C] font-plus_jakara_sans">
+          <h5 className="font-semibold text-[#26282C] dark:text-white font-plus_jakara_sans">
             Last order
           </h5>
           <h5 className="font-medium text-[#34CAA5] font-plus_jakara_sans">
@@ -95,19 +95,19 @@ export default function BottomLeft() {
                         />
                         <a
                           href="#"
-                          className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
+                          className="text-[#3A3F51] dark:text-[#EDF2F6] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
                         >
                           {order.name}
                         </a>
                       </div>
                     </td>
                     <td className="py-2  ">
-                      <span className="text-sm font-plus_jakara_sans  text-[#737373]">
+                      <span className="text-sm font-plus_jakara_sans dark:text-[#edf2f6a1]  text-[#737373]">
                         {order.date}
                       </span>
                     </td>
                     <td className="py-2  ">
-                      <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
+                      <span className="inline-block  font-plus_jakara_sans text-[#0D062D] dark:text-white font-medium text-sm leading-none">
                         {order.Amount}
                       </span>
                     </td>
@@ -128,7 +128,7 @@ export default function BottomLeft() {
                     </td>
                     <td className="py-4 flex gap-2 items-center">
                       <Image src={view} alt="view" />
-                      <span className="inline-block capitalize font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
+                      <span className="inline-block capitalize font-plus_jakara_sans text-[#0D062D] dark:text-[#9CA4AB] font-medium text-sm leading-none">
                         {order.invoice}
                       </span>
                     </td>
