@@ -11,22 +11,22 @@ import Down from "./down";
 
 export default function TopRight() {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-      <div className="w-full bg-white dark:bg-[#161619]  border border-[#EDF2F7] dark:border dark:border-[#161619]  p-[5%] rounded-xl">
+    <div className="grid grid-cols-1 sm:h-[24rem] gap-6 sm:grid-cols-2">
+      <div className="w-full bg-white dark:bg-[#161619]  border border-[#EDF2F7] dark:border dark:border-[#161619]  p-[6%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={boxtick} alt="box-tick" />
           </div>
           <Up />
         </div>
-        <div className="mt-2">
+        <div className="mt-3 w-full">
           <h5 className="font-plus_jakara_sans font-medium text-[#898989] dark:text-[#34CAA5] text-lg">
             Total Order
           </h5>
           <h5 className="font-semibold font-plus_jakara_sans text-[#3A3F51] text-2xl">
             350
           </h5>
-          <div className="flex justify-between items-center mt-3">
+          <div className="flex justify-between  w-full items-center mt-3">
             <div className="flex gap-1 items-center bg-[#34caa51f] py-[2px] px-2 rounded-[100px]">
               <Image src={trendingup} alt="trending-up" />
               <h6 className="text-xs text-[#34CAA5] font-plus_jakara_sans ">
@@ -34,19 +34,21 @@ export default function TopRight() {
               </h6>
             </div>
             <div>
-              <h6 className="font-inter text-sm">vs. previous month</h6>
+              <h6 className="font-inter sm:text-xs text-sm">
+                vs. previous month
+              </h6>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full bg-white dark:bg-[#161619]  border border-[#EDF2F7] dark:border dark:border-[#161619] p-[5%] rounded-xl">
+      <div className="w-full bg-white dark:bg-[#161619]  border border-[#EDF2F7] dark:border dark:border-[#161619] p-[6%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={rotate} alt="box-tick" />
           </div>
           <Down />
         </div>
-        <div className="mt-2">
+        <div className="mt-3">
           <h5 className="font-plus_jakara_sans font-medium text-[#898989] dark:text-[#ED544E]  text-lg">
             Total Refund
           </h5>
@@ -61,19 +63,21 @@ export default function TopRight() {
               </h6>
             </div>
             <div>
-              <h6 className="font-inter text-sm">vs. previous month</h6>
+              <h6 className="font-inter sm:text-xs text-sm">
+                vs. previous month
+              </h6>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full bg-white dark:bg-[#161619]  border  border-[#EDF2F7] dark:border dark:border-[#161619] p-[5%] rounded-xl">
+      <div className="w-full bg-white dark:bg-[#161619]  border  border-[#EDF2F7] dark:border dark:border-[#161619] p-[6%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={shopping} alt="box-tick" />
           </div>
           <Down />
         </div>
-        <div className="mt-2">
+        <div className="mt-3">
           <h5 className="font-plus_jakara_sans font-medium dark:text-[#ED544E] text-[#898989] text-lg">
             Average Sales
           </h5>
@@ -88,19 +92,21 @@ export default function TopRight() {
               </h6>
             </div>
             <div>
-              <h6 className="font-inter text-sm">vs. previous month</h6>
+              <h6 className="font-inter sm:text-xs text-sm">
+                vs. previous month
+              </h6>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full bg-white dark:bg-[#161619]  border border-[#EDF2F7] dark:border dark:border-[#161619]  p-[5%] rounded-xl">
+      <div className="w-full bg-white dark:bg-[#161619]  border border-[#EDF2F7] dark:border dark:border-[#161619]  p-[6%] rounded-xl">
         <div className="flex justify-between items-center">
           <div className="w-[40px] h-[40px] flex justify-center items-center rounded-full border boder-[#E6E6E6]">
             <Image src={coin} alt="box-tick" />
           </div>
           <Up />
         </div>
-        <div className="mt-2">
+        <div className="mt-3">
           <h5 className="font-plus_jakara_sans font-medium text-[#898989] dark:text-[#34CAA5] text-lg">
             Total Income
           </h5>
@@ -115,7 +121,9 @@ export default function TopRight() {
               </h6>
             </div>
             <div>
-              <h6 className="font-inter text-sm">vs. previous month</h6>
+              <h6 className="font-inter sm:text-xs text-sm">
+                vs. previous month
+              </h6>
             </div>
           </div>
         </div>

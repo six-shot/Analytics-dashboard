@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         plus_jakara_sans: ["var(--font-plus_jakara_sans)"],
-        inter:["var(--font-inter)"]
+        inter: ["var(--font-inter)"],
+       
       },
     },
   },

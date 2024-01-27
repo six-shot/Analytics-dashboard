@@ -149,9 +149,9 @@ export default function Header() {
                   alt="man"
                 />
               </div>
-              <div className="flex flex-col ">
-                <h5>Justin Bergson</h5>
-                <h5>Justin@gmail.com</h5>
+              <div className="flex flex-col font-inter ">
+                <h5 className="text-base">Justin Bergson</h5>
+                <h5 className="text-sm">Justin@gmail.com</h5>
               </div>
               <div>
                 <IconContext.Provider value={{ size: "20px" }}>
