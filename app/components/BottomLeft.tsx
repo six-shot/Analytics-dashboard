@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import man from "@/public/man.jpeg";
+import view from "@/public/assets/document-download.svg"
 const lastorders = [
   {
     name: "Marcus Bergson",
@@ -84,7 +85,7 @@ export default function BottomLeft() {
             <tbody>
               {lastorders.map((order)=>{
                 return (
-                  <tr>
+                  <tr key={order.name} className="border-b border-[#EDF2F6]">
                     <td className="py-2  ">
                       <div className="flex gap-3 items-center">
                         <Image
@@ -125,7 +126,8 @@ export default function BottomLeft() {
                         {order.status}
                       </span>
                     </td>
-                    <td className="py-2 ">
+                    <td className="py-2 flex items-center gap-2.5 capitalize">
+                      <Image src={view} alt="view" />
                       <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
                         {order.invoice}
                       </span>
