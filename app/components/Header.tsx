@@ -12,7 +12,7 @@ import DayTime from "./DayTime";
 import ThemeSwitch from "./ThemeSwitch";
 import Logo from "@/public/assets/Logo.svg";
 import calendar from "@/public/assets/Calendar.svg";
-import logout from "@/public/assets/logout.svg"
+import logout from "@/public/assets/logout.png"
 import dashboard from "@/public/assets/dashboard.svg";
 import setting from "@/public/assets/setting.svg";
 import arrowright from "@/public/assets/arrow-right.svg";
