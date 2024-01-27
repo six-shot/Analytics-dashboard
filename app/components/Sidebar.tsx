@@ -76,7 +76,7 @@ export default function Sidebar() {
           <div className="h-[60%] flex flex-col items-center ">
             <ul className="flex   gap-4 mb-4  flex-col">
               {menuItems.map((cat) => (
-                <li key={cat.title} className="flex   flex-col relative act">
+                <li key={cat.title} className="flex   flex-col relative ">
                   <Image src={cat.icon} alt="icon" />
                 </li>
               ))}

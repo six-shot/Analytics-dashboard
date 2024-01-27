@@ -22,6 +22,7 @@ import info from "@/public/assets/info-circle.svg";
 import discount from "@/public/assets/discount-shape.svg";
 import box from "@/public/assets/box.svg";
 import { RiLogoutCircleLine } from "react-icons/ri";
+import { MdOutlineDashboard } from "react-icons/md";
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
   return (
@@ -38,19 +39,19 @@ export default function Header() {
                 <div
                   className={`${
                     navbar ? "flex" : "hidden"
-                  } w-full h-screen dark:bg-[#161619] bg-[#FAFAFA] absolute top-0 right-0   px-[4%] pt-[2%]  sm:hidden flex flex-col sidebar z-10`}
+                  } w-full h-screen dark:bg-black bg-[#FAFAFA] absolute top-0 right-0   px-[4%] pt-[2%]  sm:hidden flex flex-col sidebar z-10`}
                 >
                   <div className="flex w-full justify-between  ">
                     {" "}
                     <IconContext.Provider
-                      value={{ color: "black", size: "30px" }}
+                      value={{ color: "#34CAA5", size: "30px" }}
                     >
                       <IoIcons.IoCloseOutline
                         onClick={() => setNavbar(!navbar)}
                       />
                     </IconContext.Provider>
                     <div>
-                      <RiLogoutCircleLine />
+                      <RiLogoutCircleLine className="text-[#34CAA5]" />
                     </div>
                   </div>
                   <div className="flex flex-col gap-5 justify-center items-center mt-[10%]">
@@ -61,23 +62,23 @@ export default function Header() {
                   </div>
                   <nav className="mt-5">
                     <ul className="flex font-plus_jakara_sans flex-col gap-5">
-                      <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
-                        <RiLogoutCircleLine />
+                      <li className="p-3 hover:bg-[#34CAA5] bg-[#34caa5] rounded-lg flex items-center gap-3">
+                        <MdOutlineDashboard />
                         <h6>Dashboard</h6>
                       </li>
-                      <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
+                      <li className="p-3 hover:bg-[#34CAA5] rounded-lg flex items-center gap-3">
                         <Image src={trendup} alt="trendup" />
                         <h6> Trend Up</h6>
                       </li>
-                      <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
+                      <li className="p-3 hover:bg-[#34CAA5] rounded-lg flex items-center gap-3">
                         <Image src={profile} alt="profile" />
                         <h6> Profile User </h6>
                       </li>
-                      <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
+                      <li className="p-3 hover:bg-[#34CAA5] rounded-lg flex items-center gap-3">
                         <Image src={discount} alt="discount" />
                         <h6> Discount</h6>
                       </li>
-                      <li className="p-3 hover:bg-red-500 rounded-lg flex items-center gap-3">
+                      <li className="p-3 hover:bg-[#34CAA5] rounded-lg flex items-center gap-3">
                         <Image src={info} alt="info" />
                         <h6> Info</h6>
                       </li>
