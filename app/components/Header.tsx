@@ -30,8 +30,8 @@ export default function Header() {
           <div className="flex items-center w-full justify-between ">
             <div className="flex gap-2 items-center">
               {/* <h5 className=" text-[18px]">MENU</h5> */}
-              <IconContext.Provider value={{ size: "25px", color: "white" }}>
-                <div className="bg-black p-2 rounded-[8px]">
+              <IconContext.Provider value={{ size: "25px" }}>
+                <div className="bg-black dark:bg-white text-white dark:text-black p-2 rounded-[8px]">
                   <HiIcons.HiMenuAlt4 onClick={() => setNavbar(!navbar)} />
                 </div>
                 <div
