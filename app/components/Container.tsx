@@ -10,20 +10,20 @@ export default function Container() {
     <section>
       <Header />
       <div className=" sm:px-[2%] px-[4%] sm:mt-0 pt-6 bg-[#FAFAFA] dark:bg-black  mt-[25%]">
-        <div className="grid sm:grid-cols-8 grid-cols-1 gap-5 items-center">
+        <div className="grid lg:grid-cols-8 grid-cols-1 lg:gap-5  items-center">
           <div className="sm:col-span-5">
             <TopLeft />
           </div>
-          <div className="sm:col-span-3 w-full">
+          <div className="sm:col-span-3 w-full pt-6 lg:pt-0">
             {" "}
             <TopRight />
           </div>
         </div>
-        <div className="grid sm:grid-cols-8 grid-cols-1 gap-5">
+        <div className="grid lg:grid-cols-8 grid-cols-1 lg:gap-5">
           <div className="sm:col-span-5">
             <BottomLeft />
           </div>
-          <div className="sm:col-span-3">
+          <div className="sm:col-span-3 w-full">
             {" "}
             <BottomRight />
           </div>
