@@ -1,5 +1,53 @@
+import Image from "next/image";
 import React from "react";
-
+import man from "@/public/man.jpeg";
+const lastorders = [
+  {
+    name: "Marcus Bergson",
+    date: "	Nov 15, 2023",
+    status: "Paid",
+    Amount: "$80,000",
+    invoice: "view",
+    path: "/dashboard",
+    icon: man,
+  },
+  {
+    name: "Jaydon Vaccaro",
+    date: "	Nov 15, 2023",
+    status: "Refund",
+    Amount: "$150,000",
+    invoice: "view",
+    path: "/dashboard",
+    icon: man,
+  },
+  {
+    name: "Corey Schleifer",
+    date: "	Nov 15, 2023",
+    status: "Paid",
+    Amount: "$87,000",
+    invoice: "view",
+    path: "/dashboard",
+    icon: man,
+  },
+  {
+    name: "Cooper Press",
+    date: "	Nov 15, 2023",
+    status: "Refund",
+    Amount: "$100,000",
+    invoice: "view",
+    path: "/dashboard",
+    icon: man,
+  },
+  {
+    name: "Phillip Lubin",
+    date: "	Nov 15, 2023",
+    status: "Paid",
+    Amount: "$78,000",
+    invoice: "view",
+    path: "/dashboard",
+    icon: man,
+  },
+];
 export default function BottomLeft() {
   return (
     <section>
@@ -34,166 +82,58 @@ export default function BottomLeft() {
               </tr>
             </thead>
             <tbody>
-              <tr className="border-b border-[#EDF2F6]">
-                <td className="py-2  ">
-                  <div className="flex items-center">
-                    <a
-                      href="#"
-                      className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
+              {lastorders.map((order)=>{
+                return (
+                  <tr>
+                    <td className="py-2  ">
+                      <div className="flex gap-3 items-center">
+                        <Image
+                          className="w-[35px] h-[35px] rounded-full object-cover"
+                          src={order.icon}
+                          alt="man"
+                        />
+                        <a
+                          href="#"
+                          className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
+                        >
+                          {order.name}
+                        </a>
+                      </div>
+                    </td>
+                    <td className="py-2  ">
+                      <span className="text-sm font-plus_jakara_sans  text-[#737373]">
+                        {order.date}
+                      </span>
+                    </td>
+                    <td className="py-2  ">
+                      <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
+                        {order.Amount}
+                      </span>
+                    </td>
+                    <td
+                      className={`py-2 ${
+                        order.status.toLowerCase() === "paid"
+                          ? "text-[#34CAA5]"
+                          : ""
+                      } ${
+                        order.status.toLowerCase() === "refund"
+                          ? "text-[#ED544E]"
+                          : ""
+                      }`}
                     >
-                      Marcus Bergson
-                    </a>
-                  </div>
-                </td>
-                <td className="py-2 ">
-                  <span className="text-sm font-plus_jakara_sans  text-[#737373]">
-                    Nov 15, 2023
-                  </span>
-                </td>
-                <td className="py-2  ">
-                  <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
-                    $80,000
-                  </span>
-                </td>
-                <td className="py-2  ">
-                  <span className="inline-block  text-[#34CAA5] text-sm font-plus_jakara_sans  leading-none">
-                    Paid
-                  </span>
-                </td>
-                <td className="py-2 ">
-                  <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
-                    View
-                  </span>
-                </td>
-              </tr>
-              <tr className="border-b border-[#EDF2F6]">
-                <td className="py-2  ">
-                  <div className="flex items-center">
-                    <a
-                      href="#"
-                      className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
-                    >
-                      Marcus Bergson
-                    </a>
-                  </div>
-                </td>
-                <td className="py-2  ">
-                  <span className="text-sm font-plus_jakara_sans  text-[#737373]">
-                    Nov 15, 2023
-                  </span>
-                </td>
-                <td className="py-2  ">
-                  <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
-                    $80,000
-                  </span>
-                </td>
-                <td className="py-2  ">
-                  <span className="inline-block  text-[#34CAA5] text-sm font-plus_jakara_sans  leading-none">
-                    Paid
-                  </span>
-                </td>
-                <td className="py-2 ">
-                  <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
-                    View
-                  </span>
-                </td>
-              </tr>
-              <tr className="border-b border-[#EDF2F6]">
-                <td className="py-2  ">
-                  <div className="flex items-center">
-                    <a
-                      href="#"
-                      className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
-                    >
-                      Marcus Bergson
-                    </a>
-                  </div>
-                </td>
-                <td className="py-2  ">
-                  <span className="text-sm font-plus_jakara_sans  text-[#737373]">
-                    Nov 15, 2023
-                  </span>
-                </td>
-                <td className="py-2  ">
-                  <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
-                    $80,000
-                  </span>
-                </td>
-                <td className="py-2  ">
-                  <span className="inline-block  text-[#34CAA5] text-sm font-plus_jakara_sans  leading-none">
-                    Paid
-                  </span>
-                </td>
-                <td className="py-2 ">
-                  <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
-                    View
-                  </span>
-                </td>
-              </tr>
-              <tr className="border-b border-[#EDF2F6]">
-                <td className="py-2  ">
-                  <div className="flex items-center">
-                    <a
-                      href="#"
-                      className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
-                    >
-                      Marcus Bergson
-                    </a>
-                  </div>
-                </td>
-                <td className="py-2  ">
-                  <span className="text-sm font-plus_jakara_sans  text-[#737373]">
-                    Nov 15, 2023
-                  </span>
-                </td>
-                <td className="py-2  ">
-                  <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
-                    $80,000
-                  </span>
-                </td>
-                <td className="py-2  ">
-                  <span className="inline-block  text-[#34CAA5] text-sm font-plus_jakara_sans  leading-none">
-                    Paid
-                  </span>
-                </td>
-                <td className="py-2 ">
-                  <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
-                    View
-                  </span>
-                </td>
-              </tr>
-              <tr className="border-b border-[#EDF2F6]">
-                <td className="py-2  ">
-                  <div className="flex items-center">
-                    <a
-                      href="#"
-                      className="text-[#3A3F51] font-medium text-base font-plus_jakara_sans hover:text-blue-500  truncate"
-                    >
-                      Marcus Bergson
-                    </a>
-                  </div>
-                </td>
-                <td className="py-2  ">
-                  <span className="text-sm font-plus_jakara_sans  text-[#737373]">
-                    Nov 15, 2023
-                  </span>
-                </td>
-                <td className="py-2  ">
-                  <span className="inline-block  font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
-                    $80,000
-                  </span>
-                </td>
-                <td className="py-2  ">
-                  <span className="inline-block  text-[#34CAA5] text-sm font-plus_jakara_sans  leading-none">
-                    Paid
-                  </span>
-                </td>
-                <td className="py-2 ">
-                  <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
-                    View
-                  </span>
-                </td>
-              </tr>
+                      <span className="inline-block  text-sm font-plus_jakara_sans leading-none">
+                        {order.status}
+                      </span>
+                    </td>
+                    <td className="py-2 ">
+                      <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
+                        {order.invoice}
+                      </span>
+                    </td>
+                  </tr>
+                );
+              })}
+             
             </tbody>
           </table>
         </div>
