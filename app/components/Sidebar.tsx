@@ -11,6 +11,7 @@ import discount from "@/public/assets/discount-shape.svg";
 import box from "@/public/assets/box.svg";
 
 import MenuLink from "./menuLink";
+import ThemeSwitch from "./ThemeSwitch";
 
 const menuItems = [
   {
@@ -72,19 +73,20 @@ export default function Sidebar() {
         </div>
 
         <div className="flex flex-col justify-between mt-5 h-full">
-          <div className="h-[60%]  ">
-            <ul className="flex gap-8 h-full   flex-col">
+          <div className="h-[60%] flex flex-col ">
+            <ul className="flex   gap-4 mb-4  flex-col">
               {menuItems.map((cat) => (
-                <li key={cat.title} className="flex gap-6  flex-col">
+                <li key={cat.title} className="flex   flex-col">
                   <Image src={cat.icon} alt="icon" />
                 </li>
               ))}
             </ul>
+            <ThemeSwitch/>
           </div>
           <div className="h-[30%]  ">
-            <ul className="flex gap-8 h-full   flex-col">
+            <ul className="flex gap-6 h-full   flex-col">
               {menuItemsbottom.map((catt) => (
-                <li key={catt.title} className="flex gap-6  flex-col">
+                <li key={catt.title} className="flex gap-4  flex-col">
                   <Image src={catt.icon} alt="icon" />
                 </li>
               ))}

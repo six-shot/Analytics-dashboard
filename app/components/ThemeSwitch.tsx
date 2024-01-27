@@ -24,20 +24,33 @@ export default function ThemeSwitch() {
       />
     );
 
-  if (resolvedTheme === "dark") {
-    return (
-      <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-full">
-        <FiSun onClick={() => setTheme("light")} />
+  return (
+    <div>
+      <div className="sm:hidden flex">
+        <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-full">
+          {resolvedTheme === "dark" ? (
+            <FiSun onClick={() => setTheme("light")} />
+          ) : (
+            <FiMoon onClick={() => setTheme("dark")} />
+          )}
+        </div>
       </div>
-    );
-  }
-
-  if (resolvedTheme === "light") {
-    return (
-      <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-full">
-        {" "}
-        <FiMoon onClick={() => setTheme("dark")} />{" "}
+      <div className="sm:flex hidden">
+        <div className="flex flex-col items-center gap-4">
+          <button
+            className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-full"
+            onClick={() => setTheme("light")}
+          >
+            <FiSun />
+          </button>
+          <button
+            className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-full"
+            onClick={() => setTheme("dark")}
+          >
+            <FiMoon />
+          </button>
+        </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
