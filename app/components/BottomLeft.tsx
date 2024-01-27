@@ -126,9 +126,9 @@ export default function BottomLeft() {
                         {order.status}
                       </span>
                     </td>
-                    <td className="py-2 flex items-center gap-2.5 capitalize">
-                      <Image src={view} alt="view" />
-                      <span className="inline-block  text-[#0D062D] text-sm font-plus_jakara_sans  leading-none">
+                    <td className="py-4 flex gap-2 items-center">
+                      <Image src={view} alt="view"/>
+                      <span className="inline-block capitalize font-plus_jakara_sans text-[#0D062D] font-medium text-sm leading-none">
                         {order.invoice}
                       </span>
                     </td>
