@@ -52,7 +52,7 @@ const lastorders = [
 export default function BottomLeft() {
   return (
     <section>
-      <div className="w-full bg-white dark:bg-[#161619] border border-[#EDF2F7]  p-[4%] rounded-xl mt-4 ">
+      <div className="w-full bg-white dark:bg-[#161619] border border-[#EDF2F7] dark:border dark:border-[#161619] p-[4%] rounded-xl mt-4 ">
         <div className="flex justify-between items-center">
           <h5 className="font-semibold text-[#26282C] font-plus_jakara_sans">
             Last order

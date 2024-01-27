@@ -109,7 +109,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="sm:flex hidden border-b border-[#E5EAEF] dark:border-[#34CAA5] dark:bg-[#25262C] bg-[#FAFAFA] py-2 px-[2%]">
+      <div className="sm:flex hidden border-b border-[#E5EAEF] dark:border-[#34CAA5] dark:bg-black bg-[#FAFAFA] py-2 px-[2%]">
         <div className="flex justify-between w-full  items-center">
           <div className="w-[35%]">
             <h4 className="font-plus_jakara_sans font-semibold text-[20px]">
