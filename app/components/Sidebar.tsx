@@ -73,7 +73,7 @@ export default function Sidebar() {
         </div>
 
         <div className="flex flex-col justify-between mt-5 h-full">
-          <div className="h-[60%] flex flex-col ">
+          <div className="h-[60%] flex flex-col items-center ">
             <ul className="flex   gap-4 mb-4  flex-col">
               {menuItems.map((cat) => (
                 <li key={cat.title} className="flex   flex-col">
