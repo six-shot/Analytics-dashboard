@@ -14,11 +14,7 @@ import MenuLink from "./menuLink";
 import ThemeSwitch from "./ThemeSwitch";
 
 const menuItems = [
-  {
-    title: "Dashboard",
-    path: "/dashboard",
-    icon: dashboard,
-  },
+  
   {
     title: "Users",
     path: "/dashboard/users",
@@ -67,11 +63,11 @@ const menuItemsbottom = [
 export default function Sidebar() {
   return (
     <div>
-      <div className="h-screen justify-between  w-full flex  flex-col items-center  ">
+      <div className="h-screen  justify-between  w-full flex  flex-col items-center  ">
         <div className="py-5">
           <Image src={logo} alt="logo" />
         </div>
-
+        <h5 className="relative act"><Image src={dashboard} alt=""/></h5>
         <div className="flex flex-col items-center justify-between mt-5 h-full">
           <div className="h-[60%] flex flex-col items-center ">
             <ul className="flex   gap-4 mb-4  flex-col">

@@ -83,12 +83,13 @@
 .act::after {
     content: '';
     position: absolute;
-    right: 0;
-    top: 14%;
-    height: 20px;
-    width: 3px;
-    
-    background-color: crimson;
+    left: 48px;
+    top: 0;
+    height: 22px;
+    width: 5px;
+    border-radius:6px 0 0 6px;
+   
+    background-color: #0D062D;
  
 }
 
