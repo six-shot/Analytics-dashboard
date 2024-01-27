@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import boxtick from "@/public/assets/box-tick.svg";
 import trendingup from "@/public/assets/trending-up.svg";
+import trendingdown from "@/public/assets/trending-down.svg";
 import Up from "./up";
 
 export default function TopRight() {
@@ -49,9 +50,9 @@ export default function TopRight() {
             350
           </h5>
           <div className="flex justify-between items-center mt-3">
-            <div className="flex gap-1 items-center bg-[#34caa51f] py-[2px] px-2 rounded-[100px]">
-              <Image src={trendingup} alt="trending-up" />
-              <h6 className="text-xs text-[#34CAA5] font-plus_jakara_sans ">
+            <div className="flex gap-1 items-center bg-[#ed544e1f] py-[2px] px-2 rounded-[100px]">
+              <Image src={trendingdown} alt="trending-up" />
+              <h6 className="text-xs text-[#ED544E] font-plus_jakara_sans ">
                 23,5%
               </h6>
             </div>
@@ -76,9 +77,9 @@ export default function TopRight() {
             350
           </h5>
           <div className="flex justify-between items-center mt-3">
-            <div className="flex gap-1 items-center bg-[#34caa51f] py-[2px] px-2 rounded-[100px]">
-              <Image src={trendingup} alt="trending-up" />
-              <h6 className="text-xs text-[#34CAA5] font-plus_jakara_sans ">
+            <div className="flex gap-1 items-center bg-[#ed544e1f] py-[2px] px-2 rounded-[100px]">
+              <Image src={trendingdown} alt="trending-up" />
+              <h6 className="text-xs text-[#ED544E] font-plus_jakara_sans ">
                 23,5%
               </h6>
             </div>
