@@ -7,7 +7,8 @@ import Image from "next/image";
 
 export default function ThemeSwitch() {
   const [mounted, setMounted] = useState(false);
-  const { setTheme, resolvedTheme } = useTheme();
+  const [localTheme, setLocalTheme] = useState("light"); // Use a different name for local state
+  const { setTheme: setNextTheme, resolvedTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
 
@@ -29,21 +30,34 @@ export default function ThemeSwitch() {
       <div className="sm:hidden flex">
         <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-full">
           {resolvedTheme === "dark" ? (
-            <FiSun onClick={() => setTheme("light")} />
+            <FiSun onClick={() => setNextTheme("light")} />
           ) : (
-            <FiMoon onClick={() => setTheme("dark")} />
+            <FiMoon onClick={() => setNextTheme("dark")} />
           )}
         </div>
       </div>
       <div className="sm:flex hidden">
         <div className="flex flex-col bg-white dark:bg-[#161619] px-1.5 py-2 rounded-[100px] items-center gap-3">
           <button
-            className="p-1.5 bg-[#34CAA5] rounded-full"
-            onClick={() => setTheme("light")}
+            className={`p-1.5 rounded-full ${
+              localTheme === "light" ? "bg-[#34CAA5]" : ""
+            }`}
+            onClick={() => {
+              setLocalTheme("light");
+              setNextTheme("light");
+            }}
           >
             <FiSun className="text-white text-[20px]" />
           </button>
-          <button className="p-2" onClick={() => setTheme("dark")}>
+          <button
+            className={`p-2 ${
+              localTheme === "dark" ? "bg-[#34CAA5] rounded-full" : ""
+            }`}
+            onClick={() => {
+              setLocalTheme("dark");
+              setNextTheme("dark");
+            }}
+          >
             <FiMoon className="text-[#B2ABAB] text-[20px]" />
           </button>
         </div>
