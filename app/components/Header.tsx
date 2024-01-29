@@ -113,12 +113,12 @@ export default function Header() {
       </div>
       <div className="sm:flex hidden border-b border-[#E5EAEF] dark:border-[#34CAA5] dark:bg-black bg-[#FAFAFA] py-2 px-[2%]">
         <div className="flex justify-between w-full  items-center">
-          <div className="lg:w-[35%]">
+          <div className="lg:w-[30%]">
             <h4 className="font-plus_jakara_sans font-semibold text-[20px]">
               Dashboard
             </h4>
           </div>
-          <div className="flex items-center gap-5 lg:gap-0 lg:w-[65%] justify-between ">
+          <div className="flex items-center gap-5 lg:gap-0 lg:w-[70%] justify-between ">
             <div className="lg:w-[364px] w-[200px] h-[40px] px-4 bg-transparent flex gap-3  items-center border border-[#DADDDD] rounded-[24px]">
               <IconContext.Provider value={{ size: "23px" }}>
                 <CiIcons.CiSearch />
