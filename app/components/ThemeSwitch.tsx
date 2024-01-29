@@ -1,5 +1,4 @@
 "use client";
-
 import { FiSun, FiMoon } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
@@ -7,8 +6,10 @@ import Image from "next/image";
 
 export default function ThemeSwitch() {
   const [mounted, setMounted] = useState(false);
-  const [localTheme, setLocalTheme] = useState("light"); // Use a different name for local state
   const { setTheme: setNextTheme, resolvedTheme } = useTheme();
+
+  // Set initial localTheme state to match resolvedTheme
+  const [localTheme, setLocalTheme] = useState(resolvedTheme);
 
   useEffect(() => setMounted(true), []);
 
@@ -28,7 +29,7 @@ export default function ThemeSwitch() {
   return (
     <div>
       <div className="sm:hidden flex">
-        <div className="p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-full">
+        <div className={`p-1.5 border-[1px] border-rgba(255,255,255,0.7) rounded-full ${resolvedTheme === 'dark' ? '' : ''}`}>
           {resolvedTheme === "dark" ? (
             <FiSun onClick={() => setNextTheme("light")} />
           ) : (
@@ -37,11 +38,9 @@ export default function ThemeSwitch() {
         </div>
       </div>
       <div className="sm:flex hidden">
-        <div className="flex flex-col bg-white dark:bg-[#161619] px-1.5 py-2 rounded-[100px] items-center gap-3">
+        <div className={`flex flex-col px-1.5 py-2 rounded-[100px] bg-white dark:bg-[#161619] items-center gap-3 ${resolvedTheme === 'dark' ? '' : ''}`}>
           <button
-            className={`p-1.5 rounded-full ${
-              localTheme === "light" ? "bg-[#34CAA5]" : ""
-            }`}
+            className={`p-1.5 rounded-full ${localTheme === "light" ? "bg-[#34CAA5]" : ""}`}
             onClick={() => {
               setLocalTheme("light");
               setNextTheme("light");
@@ -50,9 +49,7 @@ export default function ThemeSwitch() {
             <FiSun className="text-white text-[20px]" />
           </button>
           <button
-            className={`p-2 ${
-              localTheme === "dark" ? "bg-[#34CAA5] rounded-full" : ""
-            }`}
+            className={`p-2 ${localTheme === "dark" ? "bg-[#34CAA5] rounded-full" : ""}`}
             onClick={() => {
               setLocalTheme("dark");
               setNextTheme("dark");
