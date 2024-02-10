@@ -8,6 +8,7 @@ import TopLeft from "./TopLeft";
 export default function Container() {
   return (
     <section>
+      <Container/>
       
       <div className=" sm:px-[2%] px-[4%] sm:mt-0 pt-6 bg-[#FAFAFA] dark:bg-black  mt-[25%]">
         <div className="grid lg:grid-cols-8 grid-cols-1 lg:gap-5  items-center">
