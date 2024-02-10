@@ -3,12 +3,12 @@ import TopRight from "./TopRight";
 import BottomLeft from "./BottomLeft";
 import BottomRight from "./BottomRight";
 import TopLeft from "./TopLeft";
-import Header from "./Header";
+
 
 export default function Container() {
   return (
     <section>
-      <Header />
+      
       <div className=" sm:px-[2%] px-[4%] sm:mt-0 pt-6 bg-[#FAFAFA] dark:bg-black  mt-[25%]">
         <div className="grid lg:grid-cols-8 grid-cols-1 lg:gap-5  items-center">
           <div className="sm:col-span-5">
