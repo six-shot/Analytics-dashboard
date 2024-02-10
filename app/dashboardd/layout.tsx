@@ -10,7 +10,7 @@ const Layout = ({
   return (
     <div className="mx-auto max-w-[1440px]">
       <div className="flex">
-        <div className=" w-[80px] border-r-[1px] border-[#989bac] bg-[#F7F8FA] dark:border-[#34CAA5] dark:bg-black  ">
+        <div className="sm:flex hidden w-[80px] border-r-[1px] border-[#989bac] bg-[#F7F8FA] dark:border-[#34CAA5] dark:bg-black  ">
           <Sidebar />
         </div>
         <div className=" w-full bg-[#f6f6f6]">
